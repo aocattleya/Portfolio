@@ -2,7 +2,7 @@
   <div class="container">
     <div class="profiles" v-if="isActive === false">
       <div class="signboards" v-on:click="toggle_switch()">
-        <div class="sign">作った物</div>
+        <div class="sign">作った物&実績</div>
         <div class="strings"></div>
         <div class="pin top"></div>
         <div class="pin left"></div>
@@ -16,7 +16,7 @@
         </h2>
         <dev class="profiles__profile__links">
           <a
-            class="profiles__profile__links__output_logo connpass"
+            class="profiles__profile__links__output_logo"
             href="https://connpass.com/user/aocattleya/"
             target="_blank"
             rel="noopener noreferrer"
@@ -50,178 +50,248 @@
       </div>
     </div>
     <transition appear>
-      <div class="projects" v-if="isActive === true">
-        <a
-          class="projects__project"
-          href="https://github.com/aocattleya/Ramen-Timer"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div class="projects__project__inner">
-            <img
-              class="projects__project__inner__img"
-              src="~assets/images/timer.gif"
-              alt="ramen-timer"
-              loading="lazy"
-            />
-            <h4 class="projects__project__inner__title">ラーメンタイマー</h4>
-            <p class="projects__project__inner__description">
-              カップラーメンのタイマーアプリ
-            </p>
+      <div class="projects-content" v-if="isActive === true">
+        <div class="projects-top">
+          <div class="title-create">
+            <div class="title-create__text">作ったもの</div>
           </div>
-        </a>
-        <a
-          class="projects__project"
-          href="https://github.com/aocattleya/MiniBookSearch"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div class="projects__project__inner">
-            <img
-              class="projects__project__inner__img"
-              src="~assets/images/MiniBookSearch.png"
-              alt="ramen-timer"
-              loading="lazy"
-            />
-            <h4 class="projects__project__inner__title">MiniBookSearch</h4>
-            <p class="projects__project__inner__description">
-              簡易書籍管理システム
-            </p>
+          <div class="projects">
+            <a
+              class="projects__project"
+              href="https://github.com/aocattleya/Ramen-Timer"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="projects__project__inner">
+                <h4 class="projects__project__inner__title">
+                  ラーメンタイマー
+                </h4>
+                <p>カップラーメンのタイマーアプリ</p>
+                <img
+                  class="projects__project__inner__img"
+                  src="~assets/images/timer.gif"
+                  alt="ramen-timer"
+                  loading="lazy"
+                />
+                <div class="projects__project__inner__description">
+                  <p>GitHub★20↑ Qiitaトレンド入り</p>
+                  <p>【言語】JavaScript（Vue.js）</p>
+                  <p>【使用】Firebase, PWA, SweetAlert</p>
+                </div>
+              </div>
+            </a>
+            <a
+              class="projects__project"
+              href="https://github.com/aocattleya/MiniBookSearch"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="projects__project__inner">
+                <h4 class="projects__project__inner__title">MiniBookSearch</h4>
+                <p>簡易書籍管理システム</p>
+                <img
+                  class="projects__project__inner__img"
+                  src="~assets/images/MiniBookSearch.png"
+                  alt="ramen-timer"
+                  loading="lazy"
+                />
+                <div class="projects__project__inner__description">
+                  <p>GitHub★10↑ Qiitaトレンド入り</p>
+                  <p>【言語】Python（Flask）+ Vue.js</p>
+                  <p>【使用】Elasticsearch, axios, WebAPI</p>
+                </div>
+              </div>
+            </a>
+            <a
+              class="projects__project"
+              href="https://github.com/aocattleya/WordCloud-Japanese"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="projects__project__inner">
+                <h4 class="projects__project__inner__title">
+                  WordCloud-Japanese
+                </h4>
+                <p>Mecabなしで実現するWordCloud</p>
+                <img
+                  class="projects__project__inner__img"
+                  src="~assets/images/WordCloud.png"
+                  alt="ramen-timer"
+                  loading="lazy"
+                />
+                <div class="projects__project__inner__description">
+                  <p>登壇2回</p>
+                  <p>【言語】Python</p>
+                  <p>【使用】WordCloud</p>
+                </div>
+              </div>
+            </a>
+            <a
+              class="projects__project"
+              href="https://github.com/aocattleya/illustration-OriginalCharacters"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="projects__project__inner">
+                <h4 class="projects__project__inner__title">
+                  OriginalCharacters
+                </h4>
+                <p>描いたオリジナルキャラクターまとめ</p>
+                <img
+                  class="projects__project__inner__img"
+                  src="~assets/images/illustration.jpg"
+                  alt="ramen-timer"
+                  loading="lazy"
+                />
+                <div class="projects__project__inner__description">
+                  <p></p>
+                  <p>【使用】FireAlpaca</p>
+                </div>
+              </div>
+            </a>
+            <a
+              class="projects__project"
+              href="https://github.com/aocattleya/NightSky-Background"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="projects__project__inner">
+                <h4 class="projects__project__inner__title">
+                  NightSky-Background
+                </h4>
+                <p>星の流れる動く背景</p>
+                <img
+                  class="projects__project__inner__img"
+                  src="~assets/images/NightSky.gif"
+                  alt="ramen-timer"
+                  loading="lazy"
+                />
+                <div class="projects__project__inner__description">
+                  <p>登壇1回</p>
+                  <p>【言語】CSS</p>
+                  <p>【使用】FireAlpaca</p>
+                </div>
+              </div>
+            </a>
+            <a
+              class="projects__project"
+              href="https://github.com/aocattleya/LeisurePass"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="projects__project__inner">
+                <h4 class="projects__project__inner__title">LeisurePass</h4>
+                <p>チケット販売のECサイト</p>
+                <img
+                  class="projects__project__inner__img"
+                  src="~assets/images/LeisurePass.png"
+                  alt="ramen-timer"
+                  loading="lazy"
+                />
+                <div class="projects__project__inner__description">
+                  <p></p>
+                  <p>【言語】Java（Struts2）</p>
+                </div>
+              </div>
+            </a>
+            <a
+              class="projects__project"
+              href="https://github.com/aocattleya/GroupChat-App"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="projects__project__inner">
+                <h4 class="projects__project__inner__title">
+                  GroupChat-App
+                </h4>
+                <P>グループチャットアプリ</P>
+                <img
+                  class="projects__project__inner__img"
+                  src="~assets/images/GroupChat.gif"
+                  alt="ramen-timer"
+                  loading="lazy"
+                />
+                <div class="projects__project__inner__description">
+                  <p></p>
+                  <p>【言語】Ruby（Ruby on Rails）</p>
+                  <p>Haml, SCSS(BEM) + jQuery(Ajax)</p>
+                  <p>【使用】Nginx, AWS</p>
+                </div>
+              </div>
+            </a>
+            <a
+              class="projects__project"
+              href="https://github.com/aocattleya/Visual_CSharpApps"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="projects__project__inner">
+                <h4 class="projects__project__inner__title">
+                  Visual_CSharpApps
+                </h4>
+                <p>８個のディスクトップアプリ</p>
+                <img
+                  class="projects__project__inner__img"
+                  src="~assets/images/CSharp.jpg"
+                  alt="ramen-timer"
+                  loading="lazy"
+                />
+                <div class="projects__project__inner__description">
+                  <p></p>
+                  <p>【言語】C#</p>
+                  <p>【使用】VisualStudio2017</p>
+                </div>
+              </div>
+            </a>
+            <a
+              class="projects__project"
+              href="https://github.com/aocattleya?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="projects__project__inner">
+                <h4 class="projects__project__inner__title">
+                  他にも見る
+                </h4>
+                <img
+                  class="projects__project__inner__img"
+                  src="~assets/images/ripo.png"
+                  alt="ramen-timer"
+                  loading="lazy"
+                />
+                <div class="projects__project__inner__description">
+                  <p>GitHubリポジトリへ</p>
+                </div>
+              </div>
+            </a>
           </div>
-        </a>
-        <a
-          class="projects__project"
-          href="https://github.com/aocattleya/WordCloud-Japanese"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div class="projects__project__inner">
-            <img
-              class="projects__project__inner__img"
-              src="~assets/images/WordCloud.png"
-              alt="ramen-timer"
-              loading="lazy"
-            />
-            <h4 class="projects__project__inner__title">WordCloud-Japanese</h4>
-            <p class="projects__project__inner__description">
-              Mecabなしで実現するWordCloud
-            </p>
+          <div class="title-achievement">
+            <div class="title-achievement__text">実績</div>
           </div>
-        </a>
-        <a
-          class="projects__project"
-          href="https://github.com/aocattleya/illustration-OriginalCharacters"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div class="projects__project__inner">
-            <img
-              class="projects__project__inner__img"
-              src="~assets/images/illustration.jpg"
-              alt="ramen-timer"
-              loading="lazy"
-            />
-            <h4 class="projects__project__inner__title">OriginalCharacters</h4>
-            <p class="projects__project__inner__description">
-              描いたオリジナルキャラクターまとめ
-            </p>
+          <div class="achievement">
+            <div class="achievement__left">
+              <p>受賞</p>
+              <p>登壇回数</p>
+              <p>GitHub</p>
+              <p>Qiita</p>
+              <p>ブログ</p>
+            </div>
+            <div class="achievement__right">
+              <p>：優秀新人社員賞（平成31年3月29日）</p>
+              <p>：3回（100名以上2回、30名以上1回）</p>
+              <p>：contributions1700↑ Star★50↑ Followers120↑</p>
+              <p>：いいね750↑ トレンド入り4回</p>
+              <p>：アメーブログで月36万PVの個人ブログの運営経験あり</p>
+            </div>
           </div>
-        </a>
-        <a
-          class="projects__project"
-          href="https://github.com/aocattleya/LeisurePass"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div class="projects__project__inner">
-            <img
-              class="projects__project__inner__img"
-              src="~assets/images/LeisurePass.png"
-              alt="ramen-timer"
-              loading="lazy"
-            />
-            <h4 class="projects__project__inner__title">LeisurePass</h4>
-            <p class="projects__project__inner__description">
-              チケット販売のECサイト
-            </p>
+
+          <!-- BACKボタン -->
+          <div class="back">
+            <div class="back__text" v-on:click="toggle_switch()">
+              BACK
+            </div>
           </div>
-        </a>
-        <a
-          class="projects__project"
-          href="https://github.com/aocattleya/NightSky-Background"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div class="projects__project__inner">
-            <img
-              class="projects__project__inner__img"
-              src="~assets/images/NightSky.gif"
-              alt="ramen-timer"
-              loading="lazy"
-            />
-            <h4 class="projects__project__inner__title">NightSky-Background</h4>
-            <p class="projects__project__inner__description">
-              星の流れる動く背景
-            </p>
-          </div>
-        </a>
-        <a
-          class="projects__project"
-          href="https://github.com/aocattleya/GroupChat-App"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div class="projects__project__inner">
-            <img
-              class="projects__project__inner__img"
-              src="~assets/images/GroupChat.gif"
-              alt="ramen-timer"
-              loading="lazy"
-            />
-            <h4 class="projects__project__inner__title">GroupChat-App</h4>
-            <p class="projects__project__inner__description">
-              グループチャットアプリ
-            </p>
-          </div>
-        </a>
-        <a
-          class="projects__project"
-          href="https://github.com/aocattleya/Visual_CSharpApps"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div class="projects__project__inner">
-            <img
-              class="projects__project__inner__img"
-              src="~assets/images/CSharp.jpg"
-              alt="ramen-timer"
-              loading="lazy"
-            />
-            <h4 class="projects__project__inner__title">Visual_CSharpApps</h4>
-            <p class="projects__project__inner__description">
-              ８個のディスクトップアプリ
-            </p>
-          </div>
-        </a>
-        <a
-          class="projects__project"
-          href="https://github.com/aocattleya?tab=repositories"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div class="projects__project__inner">
-            <img
-              class="projects__project__inner__img"
-              src="~assets/images/ripo.png"
-              alt="ramen-timer"
-              loading="lazy"
-            />
-            <h4 class="projects__project__inner__title">他にも見る</h4>
-            <p class="projects__project__inner__description">
-              GitHubリポジトリへ
-            </p>
-          </div>
-        </a>
+        </div>
       </div>
     </transition>
   </div>
@@ -230,6 +300,8 @@
 <style lang="scss">
 * {
   font-family: font;
+  margin: 0;
+  padding: 0;
 }
 
 @mixin text {
@@ -263,7 +335,7 @@ $font: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', 
   height: 100%;
   object-fit: cover;
   position: relative;
-  background: url('~assets/images/mizutama.png');
+  background: url('~assets/images/aotama.png');
 }
 
 .signboards {
@@ -288,9 +360,9 @@ $font: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', 
   height: 150px;
   background: burlywood;
   border-radius: 15px;
-  line-height: 200px;
+  line-height: 175px;
   text-align: center;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 700;
   font-family: sans-serif;
   color: saddlebrown;
@@ -346,11 +418,32 @@ $font: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', 
   }
 }
 
+p {
+  font-size: 15px;
+}
+
 .profiles {
   width: 100%;
   height: 100vh;
   margin-top: -40px;
   margin-bottom: -40px;
+  opacity: 0;
+  animation-name: anime;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  @keyframes anime {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, -20px, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
   &__profile {
     position: absolute;
     border: solid 5px #283c5f;
@@ -446,32 +539,109 @@ $font: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', 
   }
 }
 
-.projects {
-  margin: 0 auto;
-  background-color: white;
+.projects-content {
   border: solid 5px #283c5f;
+  width: 94%;
+  height: 90%;
   border-radius: 1em;
   left: calc(50% - 47%);
   top: calc(50% - 45%);
-  width: 94%;
-  height: 90%;
   padding-top: 40px;
   padding-bottom: 40px;
+  border: solid 5px #283c5f;
+  margin: 0 auto;
+  background-color: white;
+}
+
+@mixin title {
+  width: 500px;
+  height: 80px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  padding-top: 18px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    border: solid 2px #283c5f;
+    width: 500px;
+    height: 80px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    padding-top: 18px;
+    top: 4px;
+    left: 4px;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    border: solid 2px #283c5f;
+    width: 500px;
+    height: 80px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    padding-top: 18px;
+    top: -4px;
+    left: -4px;
+  }
+  &__text {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+  }
+}
+
+.title-create {
+  @include title;
+}
+
+.title-achievement {
+  @include title;
+  margin-top: 100px;
+}
+
+.projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   &__project {
     color: #35495e;
     box-shadow: 2px 2px 2px #555;
-    font-size: 50px;
-    margin-bottom: 40px;
-    width: 450px;
-    margin: 30px;
+    font-size: 40px;
+    margin: 30px 15px 30px;
+    width: 320px;
     border: double 2px #283c5f;
     border-radius: 0.5em;
     text-decoration: none;
     transition: opacity 1s ease 0s;
     position: relative;
+    &__inner {
+      position: relative;
+      margin-top: -45px;
+      &__img {
+        padding-top: 10px;
+        width: calc(100% - 40px);
+        height: 150px;
+      }
+      &__title {
+        font-size: 20px;
+      }
+      &__description {
+        margin: 0 auto;
+        width: 95%;
+        font-size: 15px;
+        margin-bottom: 20px;
+        text-align: left;
+        padding: 0 10px;
+        & p:nth-child(1) {
+          text-align: center;
+          margin-bottom: 5px;
+        }
+      }
+    }
     &:hover {
       box-shadow: none;
       transition: 0.5s;
@@ -537,7 +707,7 @@ $font: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', 
       content: '';
       display: block;
       position: relative;
-      background-image: url('~@/assets/images/FireAlpaca.jpeg');
+      background-image: url('~@/assets/images/firealpaca.png');
       width: 60px;
       height: 60px;
       z-index: 10;
@@ -551,7 +721,7 @@ $font: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', 
       content: '';
       display: block;
       position: relative;
-      background-image: url('~@/assets/images/java.png');
+      background-image: url('~@/assets/images/css.png');
       width: 60px;
       height: 60px;
       z-index: 10;
@@ -565,7 +735,7 @@ $font: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', 
       content: '';
       display: block;
       position: relative;
-      background-image: url('~@/assets/images/css.png');
+      background-image: url('~@/assets/images/java.png');
       width: 60px;
       height: 60px;
       z-index: 10;
@@ -609,8 +779,8 @@ $font: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', 
       position: relative;
       background-image: url('~@/assets/images/github.jpg');
       border-radius: 50%;
-      width: 65px;
-      height: 65px;
+      width: 60px;
+      height: 60px;
       z-index: 10;
       left: -30px;
       top: -20px;
@@ -618,25 +788,53 @@ $font: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', 
       background-position: center;
       background-repeat: no-repeat;
     }
-    &__inner {
-      position: relative;
-      margin-top: -45px;
-      &__img {
-        padding-top: 10px;
-        width: calc(100% - 40px);
-        height: 205px;
-      }
-      &__title {
-        font-size: 20px;
-      }
-      &__description {
-        margin: 0 auto;
-        width: 95%;
-        font-size: 20px;
-        margin-bottom: 20px;
-      }
+  }
+}
+
+.achievement {
+  width: 60%;
+  margin: 0 auto;
+  border: double 1px #283c5f;
+  border-radius: 10px;
+  padding: 40px 60px 40px 130px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  &__left {
+    font-size: 17px;
+    p {
+      margin-bottom: 15px;
     }
   }
+  &__right {
+    font-size: 17px;
+    p {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.back {
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  color: #1b1b1b;
+  background: #fff;
+  border: 2px solid #1b1b1b;
+  font-size: 20px;
+  line-height: 50px;
+  width: 60%;
+  margin: 100px auto 30px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.back:hover {
+  background: #1b1b1b;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
 }
 </style>
 
