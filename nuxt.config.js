@@ -8,11 +8,8 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: "viewport", content: "width=1200" },
-      {
-        hid: 'description',
-        name: 'description',
-        content: process.env.npm_package_description || ''
-      }
+      { name: 'description', content: 'aocattleyaのリンクやアプリをまとめたポートフォリオサイトです。' },
+      { name: 'keywords', content: 'aocattleya ポートフォリオ'}
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
