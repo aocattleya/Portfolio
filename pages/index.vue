@@ -12,7 +12,7 @@
         <img src="~/assets/images/ao.png" class="profiles__profile__logo" />
         <img src="~/assets/images/name.png" class="profiles__profile__name" />
         <h2 class="profiles__profile__subtitle">
-          趣味でフロントエンドを主軸にWeb技術を学んでいます。+ 絵🎨
+          趣味でフロントエンドを主軸にWeb技術を学んでいます。+ 絵描き🎨
         </h2>
         <dev class="profiles__profile__links">
           <a
@@ -53,7 +53,10 @@
       <div class="projects-content" v-if="isActive === true">
         <div class="projects-top">
           <div class="title-create">
-            <div class="title-create__text">作ったもの</div>
+            <div class="title-create__text">
+              作ったもの
+              <div class="title-create__icon"></div>
+            </div>
           </div>
           <div class="projects">
             <a
@@ -266,7 +269,10 @@
             </a>
           </div>
           <div class="title-achievement">
-            <div class="title-achievement__text">実績</div>
+            <div class="title-achievement__text">
+              実績
+              <div class="title-achievement__icon"></div>
+            </div>
           </div>
           <div class="achievement">
             <div class="achievement__left">
@@ -281,8 +287,119 @@
               <p>：3回（100名以上2回、30名以上1回）</p>
               <p>：contributions1700↑ Star★50↑ Followers120↑</p>
               <p>：いいね750↑ トレンド入り4回</p>
-              <p>：アメーブログで月36万PVの個人ブログの運営経験あり</p>
+              <p>：アメーバブログで月36万PVの個人ブログの運営経験あり</p>
             </div>
+          </div>
+          <div class="title-other">
+            <div class="title-other__text">
+              Other
+              <div class="title-other__icon"></div>
+            </div>
+          </div>
+          <div class="other">
+            <div class="other__text">
+              <div class="other__text--left">
+                <p>血液型</p>
+                <p>趣味</p>
+                <p>出身</p>
+                <p>住み</p>
+                <p>開発環境</p>
+                <p>強み</p>
+                <p>尊敬する人</p>
+              </div>
+              <div class="other__text--right">
+                <p>：A型</p>
+                <p>：映画、プログラミング</p>
+                <p>：兵庫県 神戸市</p>
+                <p>：東京都 墨田区</p>
+                <p>
+                  ：MacBook Pro / MacBook Air / Win10, デュアル, Corei7-7700
+                </p>
+                <p>
+                  ：趣味でもやれて好きで取り組める事を仕事にした事、天職です。
+                </p>
+                <p>
+                  ：ぐらばく（@Grabacr07）さん<br />&nbsp;&nbsp;プログラミングを始めたきっかけであり目標です。
+                </p>
+              </div>
+            </div>
+            <div class="other__tweet">
+              <!-- 1ツイート目 -->
+              <div class="other__tweet--1">
+                <blockquote
+                  class="twitter-tweet"
+                  data-cards="hidden"
+                  data-lang="ja"
+                >
+                  <p lang="ja" dir="ltr">
+                    Qiita記事書きました！<br /><br />↓
+                    Vue.jsとCSSアニメーションでラーメンタイマーを作る+Firebaseで簡単公開<a
+                      href="https://t.co/6BgFy3evon"
+                      >https://t.co/6BgFy3evon</a
+                    ><br /><br />・ラーメンタイマー<a
+                      href="https://t.co/O90jhtTnAD"
+                      >https://t.co/O90jhtTnAD</a
+                    >
+                    <br />・ソースコード（GitHub）<a
+                      href="https://t.co/kktMhWFOLW"
+                      >https://t.co/kktMhWFOLW</a
+                    >
+                    <a href="https://t.co/9P5UP2pBA0"
+                      >pic.twitter.com/9P5UP2pBA0
+                    </a>
+                  </p>
+                  &mdash; aocattleya (@aocattleya)
+                  <a
+                    href="https://twitter.com/aocattleya/status/1166298856796983296?ref_src=twsrc%5Etfw"
+                    >2019年8月27日</a
+                  >
+                </blockquote>
+                <script
+                  async
+                  src="https://platform.twitter.com/widgets.js"
+                  charset="utf-8"
+                ></script>
+              </div>
+              <!-- 2ツイート目 -->
+              <div class="other__tweet--2">
+                <blockquote
+                  class="twitter-tweet"
+                  data-cards="hidden"
+                  data-lang="ja"
+                >
+                  <p lang="ja" dir="ltr">
+                    湊川 あい（<a
+                      href="https://twitter.com/llminatoll?ref_src=twsrc%5Etfw"
+                      >@llminatoll</a
+                    >）さんにお会いしました✨<br />自分も元々漫画描いてて憧れがあったり、わかばちゃんシリーズでGitHubが大好きになって他にも沢山影響与えてくれた方なので一生の思い出です。
+                    <a href="https://t.co/uyVlKBk9V3"
+                      >pic.twitter.com/uyVlKBk9V3
+                    </a>
+                  </p>
+                  &mdash; aocattleya (@aocattleya)
+                  <a
+                    href="https://twitter.com/aocattleya/status/1194627288979009536?ref_src=twsrc%5Etfw"
+                    >2019年11月13日</a
+                  >
+                </blockquote>
+                <script
+                  async
+                  src="https://platform.twitter.com/widgets.js"
+                  charset="utf-8"
+                ></script>
+              </div>
+            </div>
+            <center>
+              <div class="speakerdeck">
+                <script
+                  async
+                  class="speakerdeck-embed"
+                  data-id="e0d151ad238746c49614f8436662bab7"
+                  data-ratio="1.77777777777778"
+                  src="//speakerdeck.com/assets/embed.js"
+                ></script>
+              </div>
+            </center>
           </div>
 
           <!-- BACKボタン -->
@@ -474,7 +591,7 @@ p {
       margin-bottom: 10px;
     }
     &__links {
-      width: 50%;
+      width: 670px;
       margin: 0 auto;
       list-style: none;
       display: flex;
@@ -596,11 +713,62 @@ p {
 
 .title-create {
   @include title;
+  .title-create__icon {
+    display: block;
+    position: absolute;
+    background-image: url('~@/assets/images/menma.png');
+    width: 120px;
+    height: 120px;
+    z-index: 10;
+    right: -35px;
+    top: -20px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+  }
 }
 
 .title-achievement {
   @include title;
-  margin-top: 100px;
+  margin-top: 150px;
+  .title-achievement__icon {
+    display: block;
+    position: absolute;
+    background-image: url('~@/assets/images/ao.png');
+    width: 120px;
+    height: 120px;
+    z-index: 10;
+    left: -40px;
+    top: -20px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 50%;
+    border: solid 2px;
+  }
+}
+
+.title-other {
+  @include title;
+  margin-top: 150px;
+  .title-other__icon {
+    display: block;
+    position: absolute;
+    background-image: url('~@/assets/images/ao2.png');
+    width: 120px;
+    height: 120px;
+    z-index: 10;
+    right: -35px;
+    top: -20px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 50%;
+    border: solid 2px;
+  }
 }
 
 .projects {
@@ -812,6 +980,48 @@ p {
       margin-bottom: 15px;
     }
   }
+}
+
+.other {
+  width: 60%;
+  margin: 0 auto;
+  border: double 1px #283c5f;
+  border-radius: 10px;
+  text-align: left;
+  &__text {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    &--left {
+      font-size: 17px;
+      p {
+        margin-bottom: 15px;
+      }
+    }
+    &--right {
+      font-size: 17px;
+      p {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  &__tweet {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 30px;
+    &--1 {
+      width: 300px;
+      margin-right: 20px;
+    }
+    &--2 {
+      width: 300px;
+    }
+  }
+}
+
+.speakerdeck {
+  max-width: 77%;
+  margin: 40px;
 }
 
 .back {
