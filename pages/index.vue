@@ -77,7 +77,9 @@
                   loading="lazy"
                 />
                 <div class="projects__project__inner__description">
-                  <p>GitHub★20↑ Qiitaトレンド入り</p>
+                  <p>
+                    GitHub<a class="star">★</a>20↑ Qiitaトレンド入り 登壇1回
+                  </p>
                   <p>【言語】JavaScript（Vue.js）</p>
                   <p>【使用】Firebase, PWA, SweetAlert</p>
                 </div>
@@ -99,7 +101,9 @@
                   loading="lazy"
                 />
                 <div class="projects__project__inner__description">
-                  <p>GitHub★10↑ Qiitaトレンド入り</p>
+                  <p>
+                    GitHub<a class="star">★</a>10↑ Qiitaトレンド入り 登壇1回
+                  </p>
                   <p>【言語】Python（Flask）+ Vue.js</p>
                   <p>【使用】Elasticsearch, axios, WebAPI</p>
                 </div>
@@ -232,7 +236,7 @@
                 <h4 class="projects__project__inner__title">
                   Visual_CSharpApps
                 </h4>
-                <p>８個のディスクトップアプリ</p>
+                <p>８個のデスクトップアプリ</p>
                 <img
                   class="projects__project__inner__img"
                   src="~assets/images/CSharp.jpg"
@@ -283,10 +287,18 @@
               <p>ブログ</p>
             </div>
             <div class="achievement__right">
-              <p>：優秀新人社員賞（平成31年3月29日）</p>
+              <p>
+                ：優秀新人社員賞（平成31年3月29日）<a
+                  class="achievement__right__company"
+                >
+                  Leading Edge Co.,Ltd.</a
+                >
+              </p>
               <p>：3回（100名以上2回、30名以上1回）</p>
-              <p>：contributions1700↑ Star★50↑ Followers120↑</p>
-              <p>：いいね750↑ トレンド入り4回</p>
+              <p>
+                ：contributions1700↑ Star<a class="star">★</a>↑ Followers120↑
+              </p>
+              <p>：contributions750↑ トレンド入り4回</p>
               <p>：アメーバブログで月36万PVの個人ブログの運営経験あり</p>
             </div>
           </div>
@@ -298,7 +310,8 @@
           </div>
           <div class="other">
             <div class="other__text">
-              <div class="other__text--left">
+              <div class="other__text__left">
+                <p>生年月日</p>
                 <p>血液型</p>
                 <p>趣味</p>
                 <p>出身</p>
@@ -307,7 +320,8 @@
                 <p>強み</p>
                 <p>尊敬する人</p>
               </div>
-              <div class="other__text--right">
+              <div class="other__text__right">
+                <p>：1993年12月7日</p>
                 <p>：A型</p>
                 <p>：映画、プログラミング</p>
                 <p>：兵庫県 神戸市</p>
@@ -319,7 +333,11 @@
                   ：趣味でもやれて好きで取り組める事を仕事にした事、天職です。
                 </p>
                 <p>
-                  ：ぐらばく（@Grabacr07）さん<br />&nbsp;&nbsp;プログラミングを始めたきっかけであり目標です。
+                  ：ぐらばく（<a
+                    class="other__text__right__link"
+                    href="https://twitter.com/Grabacr07"
+                    >@Grabacr07</a
+                  >）さん<br />&nbsp;&nbsp;プログラミングを始めたきっかけであり目標です。
                 </p>
               </div>
             </div>
@@ -536,7 +554,7 @@ $font: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', 
 }
 
 p {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .profiles {
@@ -807,6 +825,14 @@ p {
         & p:nth-child(1) {
           text-align: center;
           margin-bottom: 5px;
+          font-size: 13px;
+          font-weight: bold;
+        }
+        .star {
+          -webkit-text-stroke: 0.5px black;
+          color: #f9f921;
+          padding: 0 0.5px 0 1px;
+          font-size: 12px;
         }
       }
     }
@@ -979,6 +1005,15 @@ p {
     p {
       margin-bottom: 15px;
     }
+    &__company {
+      font-size: 12px;
+    }
+    .star {
+      -webkit-text-stroke: 0.5px black;
+      color: #f9f921;
+      padding: 0 0.5px 2px 2px;
+      font-size: 12px;
+    }
   }
 }
 
@@ -992,16 +1027,24 @@ p {
     margin-top: 40px;
     display: flex;
     justify-content: center;
-    &--left {
+    &__left {
       font-size: 17px;
       p {
         margin-bottom: 15px;
       }
     }
-    &--right {
+    &__right {
       font-size: 17px;
       p {
         margin-bottom: 15px;
+      }
+      &__link {
+        color: #0099e8;
+        text-decoration: none;
+        &:hover {
+          opacity: 0.7;
+          text-decoration: underline;
+        }
       }
     }
   }
