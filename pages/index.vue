@@ -296,7 +296,7 @@
               </p>
               <p>：3回（100名以上2回、30名以上1回）</p>
               <p>
-                ：contributions1700↑ Star<a class="star">★</a>↑ Followers120↑
+                ：contributions1700↑ Star<a class="star">★</a>50↑ Followers120↑
               </p>
               <p>：contributions750↑ トレンド入り4回</p>
               <p>：アメーバブログで月36万PVの個人ブログの運営経験あり</p>
@@ -344,32 +344,18 @@
             <div class="other__tweet">
               <!-- 1ツイート目 -->
               <div class="other__tweet--1">
-                <blockquote
-                  class="twitter-tweet"
-                  data-cards="hidden"
-                  data-lang="ja"
-                >
+                <blockquote class="twitter-tweet" data-lang="ja">
                   <p lang="ja" dir="ltr">
-                    Qiita記事書きました！<br /><br />↓
-                    Vue.jsとCSSアニメーションでラーメンタイマーを作る+Firebaseで簡単公開<a
-                      href="https://t.co/6BgFy3evon"
-                      >https://t.co/6BgFy3evon</a
-                    ><br /><br />・ラーメンタイマー<a
-                      href="https://t.co/O90jhtTnAD"
-                      >https://t.co/O90jhtTnAD</a
+                    まつもとゆきひろさんにサインしていただいて写真まで撮って貰えた😭ありがとうございます！宝物！！<a
+                      href="https://t.co/R7ihbHGXIG"
                     >
-                    <br />・ソースコード（GitHub）<a
-                      href="https://t.co/kktMhWFOLW"
-                      >https://t.co/kktMhWFOLW</a
+                      pic.twitter.com/R7ihbHGXIG</a
                     >
-                    <a href="https://t.co/9P5UP2pBA0"
-                      >pic.twitter.com/9P5UP2pBA0
-                    </a>
                   </p>
                   &mdash; aocattleya (@aocattleya)
                   <a
-                    href="https://twitter.com/aocattleya/status/1166298856796983296?ref_src=twsrc%5Etfw"
-                    >2019年8月27日</a
+                    href="https://twitter.com/aocattleya/status/1207665158010499072?ref_src=twsrc%5Etfw"
+                    >2019年12月19日</a
                   >
                 </blockquote>
                 <script
@@ -380,19 +366,15 @@
               </div>
               <!-- 2ツイート目 -->
               <div class="other__tweet--2">
-                <blockquote
-                  class="twitter-tweet"
-                  data-cards="hidden"
-                  data-lang="ja"
-                >
+                <blockquote class="twitter-tweet" data-lang="ja">
                   <p lang="ja" dir="ltr">
                     湊川 あい（<a
                       href="https://twitter.com/llminatoll?ref_src=twsrc%5Etfw"
                       >@llminatoll</a
                     >）さんにお会いしました✨<br />自分も元々漫画描いてて憧れがあったり、わかばちゃんシリーズでGitHubが大好きになって他にも沢山影響与えてくれた方なので一生の思い出です。
                     <a href="https://t.co/uyVlKBk9V3"
-                      >pic.twitter.com/uyVlKBk9V3
-                    </a>
+                      >pic.twitter.com/uyVlKBk9V3</a
+                    >
                   </p>
                   &mdash; aocattleya (@aocattleya)
                   <a
