@@ -378,12 +378,15 @@
                 </h4>
                 <img
                   class="projects__project__inner__img"
-                  src="~assets/images/ripo.png"
+                  src="~assets/images/kurin-github.png"
                   alt="ramen-timer"
                   loading="lazy"
                 />
                 <div class="projects__project__inner__description">
-                  <p>GitHubリポジトリへ</p>
+                  <p>現在、40個以上のリポジトリがあります。</p>
+                  <p>
+                    全てのリポジトリにデモ画像などを充実させているので是非楽しんでください。
+                  </p>
                 </div>
               </div>
             </a>
@@ -832,7 +835,7 @@ p {
   .title-create__icon {
     display: block;
     position: absolute;
-    background-image: url('~@/assets/images/menma.png');
+    background-image: url('~@/assets/images/旧aocattleya.jpg');
     width: 120px;
     height: 120px;
     z-index: 10;
@@ -841,7 +844,8 @@ p {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    border: none;
+    border-radius: 50%;
+    border: solid 2px;
   }
 }
 
@@ -851,7 +855,7 @@ p {
   .title-achievement__icon {
     display: block;
     position: absolute;
-    background-image: url('~@/assets/images/ao.png');
+    background-image: url('~@/assets/images/ao2.png');
     width: 120px;
     height: 120px;
     z-index: 10;
@@ -872,7 +876,7 @@ p {
   .title-other__icon {
     display: block;
     position: absolute;
-    background-image: url('~@/assets/images/ao2.png');
+    background-image: url('~@/assets/images/ao3.png');
     width: 120px;
     height: 120px;
     z-index: 10;
