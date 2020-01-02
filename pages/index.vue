@@ -9,7 +9,10 @@
         <div class="pin right"></div>
       </div>
       <div class="profiles__profile">
-        <img src="~/assets/images/ao.png" class="profiles__profile__logo" />
+        <img
+          src="~/assets/images/aocattleya.jpg"
+          class="profiles__profile__logo"
+        />
         <img src="~/assets/images/name.png" class="profiles__profile__name" />
         <h2 class="profiles__profile__subtitle">
           趣味でフロントエンドを主軸にWeb技術を学んでいます。+ 絵描き🎨
@@ -59,6 +62,7 @@
             </div>
           </div>
           <div class="projects">
+            <!-- ラーメンタイマー -->
             <a
               class="projects__project"
               href="https://github.com/aocattleya/Ramen-Timer"
@@ -85,6 +89,7 @@
                 </div>
               </div>
             </a>
+            <!-- 簡易書籍管理システム -->
             <a
               class="projects__project"
               href="https://github.com/aocattleya/MiniBookSearch"
@@ -109,6 +114,7 @@
                 </div>
               </div>
             </a>
+            <!-- WordCloud-Japanese -->
             <a
               class="projects__project"
               href="https://github.com/aocattleya/WordCloud-Japanese"
@@ -133,6 +139,7 @@
                 </div>
               </div>
             </a>
+            <!-- OriginalCharacters -->
             <a
               class="projects__project"
               href="https://github.com/aocattleya/illustration-OriginalCharacters"
@@ -153,9 +160,33 @@
                 <div class="projects__project__inner__description">
                   <p></p>
                   <p>【使用】FireAlpaca</p>
+                  <p>【詳細】「aocattleya」と「くりんちゃん」がいます。</p>
                 </div>
               </div>
             </a>
+            <!-- LeisurePass -->
+            <a
+              class="projects__project"
+              href="https://github.com/aocattleya/LeisurePass"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="projects__project__inner">
+                <h4 class="projects__project__inner__title">LeisurePass！</h4>
+                <p>チケット販売のECサイト</p>
+                <img
+                  class="projects__project__inner__img"
+                  src="~assets/images/LeisurePass.png"
+                  alt="ramen-timer"
+                  loading="lazy"
+                />
+                <div class="projects__project__inner__description">
+                  <p></p>
+                  <p>【言語】Java（Apache Struts2）</p>
+                </div>
+              </div>
+            </a>
+            <!-- NightSky-Background -->
             <a
               class="projects__project"
               href="https://github.com/aocattleya/NightSky-Background"
@@ -180,27 +211,7 @@
                 </div>
               </div>
             </a>
-            <a
-              class="projects__project"
-              href="https://github.com/aocattleya/LeisurePass"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div class="projects__project__inner">
-                <h4 class="projects__project__inner__title">LeisurePass</h4>
-                <p>チケット販売のECサイト</p>
-                <img
-                  class="projects__project__inner__img"
-                  src="~assets/images/LeisurePass.png"
-                  alt="ramen-timer"
-                  loading="lazy"
-                />
-                <div class="projects__project__inner__description">
-                  <p></p>
-                  <p>【言語】Java（Struts2）</p>
-                </div>
-              </div>
-            </a>
+            <!-- グループチャットアプリ -->
             <a
               class="projects__project"
               href="https://github.com/aocattleya/GroupChat-App"
@@ -209,7 +220,7 @@
             >
               <div class="projects__project__inner">
                 <h4 class="projects__project__inner__title">
-                  GroupChat-App
+                  GroupChat App
                 </h4>
                 <P>グループチャットアプリ</P>
                 <img
@@ -222,10 +233,62 @@
                   <p></p>
                   <p>【言語】Ruby（Ruby on Rails）</p>
                   <p>Haml, SCSS(BEM) + jQuery(Ajax)</p>
-                  <p>【使用】Nginx, AWS</p>
+                  <p>【使用】AWS, Nginx</p>
                 </div>
               </div>
             </a>
+            <!-- メルカリ -->
+            <a
+              class="projects__project"
+              href="https://github.com/aocattleya/Mercari_clone"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="projects__project__inner">
+                <h4 class="projects__project__inner__title">
+                  Mercari clone
+                </h4>
+                <P>メルカリのクローンサイト</P>
+                <img
+                  class="projects__project__inner__img"
+                  src="~assets/images/mercari.png"
+                  alt="ramen-timer"
+                  loading="lazy"
+                />
+                <div class="projects__project__inner__description">
+                  <p>登壇1回</p>
+                  <p>【言語】Ruby（Ruby on Rails）</p>
+                  <p>Haml, SCSS(BEM) + jQuery</p>
+                  <p>【使用】AWS, Nginx, OmniAuth, PAY.JP</p>
+                </div>
+              </div>
+            </a>
+            <!-- Vue-FormValidation -->
+            <a
+              class="projects__project"
+              href="https://github.com/aocattleya/Vue-FormValidation"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="projects__project__inner">
+                <h4 class="projects__project__inner__title">
+                  Vue FormValidation
+                </h4>
+                <p>Vue CLIでフォームバリデーション</p>
+                <img
+                  class="projects__project__inner__img"
+                  src="~assets/images/FormValidation.gif"
+                  alt="ramen-timer"
+                  loading="lazy"
+                />
+                <div class="projects__project__inner__description">
+                  <p></p>
+                  <p>【言語】JavaScript（Vue.js）</p>
+                  <p>【使用】SweetAlert</p>
+                </div>
+              </div>
+            </a>
+            <!-- ディスクトップアプリ -->
             <a
               class="projects__project"
               href="https://github.com/aocattleya/Visual_CSharpApps"
@@ -234,7 +297,7 @@
             >
               <div class="projects__project__inner">
                 <h4 class="projects__project__inner__title">
-                  Visual_CSharpApps
+                  VisualC# Apps
                 </h4>
                 <p>８個のデスクトップアプリ</p>
                 <img
@@ -246,10 +309,63 @@
                 <div class="projects__project__inner__description">
                   <p></p>
                   <p>【言語】C#</p>
-                  <p>【使用】VisualStudio2017</p>
+                  <p>【使用】VisualStudio2017<br />WindowsForms, CoreTweet</p>
                 </div>
               </div>
             </a>
+            <!-- Portfolio -->
+            <a
+              class="projects__project"
+              href="https://github.com/aocattleya/Portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="projects__project__inner">
+                <h4 class="projects__project__inner__title">
+                  Portfolio
+                </h4>
+                <p>Nuxt.jsでポートフォリオ</p>
+                <img
+                  class="projects__project__inner__img"
+                  src="~assets/images/portfolio.png"
+                  alt="ramen-timer"
+                  loading="lazy"
+                />
+                <div class="projects__project__inner__description">
+                  <p>登壇1回</p>
+                  <p>【言語】JavaScript（Nuxt.js）</p>
+                  <p>【使用】Firebase</p>
+                </div>
+              </div>
+            </a>
+            <!-- Totoro-Layer -->
+            <a
+              class="projects__project"
+              href="https://github.com/aocattleya/Totoro-Layer"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="projects__project__inner">
+                <h4 class="projects__project__inner__title">
+                  Totoro-Layer
+                </h4>
+                <p>トトロのアニメーション</p>
+                <img
+                  class="projects__project__inner__img"
+                  src="~assets/images/totoro.png"
+                  alt="ramen-timer"
+                  loading="lazy"
+                />
+                <div class="projects__project__inner__description">
+                  <p></p>
+                  <p>【使用】FireAlpaca</p>
+                  <p>
+                    【詳細】社内忘年会のビンゴゲーム待機画面用に描かせて頂いた動くトトロ。
+                  </p>
+                </div>
+              </div>
+            </a>
+            <!-- 他 -->
             <a
               class="projects__project"
               href="https://github.com/aocattleya?tab=repositories"
@@ -294,9 +410,9 @@
                   Leading Edge Co.,Ltd.</a
                 >
               </p>
-              <p>：3回（100名以上2回、30名以上1回）</p>
+              <p>：4回（100名以上2回、70名以上1回、30名以上1回）</p>
               <p>
-                ：contributions1700↑ Star<a class="star">★</a>↑ Followers120↑
+                ：contributions1900↑ Star<a class="star">★</a>50↑ Followers120↑
               </p>
               <p>：contributions750↑ トレンド入り4回</p>
               <p>：アメーバブログで月36万PVの個人ブログの運営経験あり</p>
@@ -789,6 +905,20 @@ p {
   }
 }
 
+@mixin project {
+  content: '';
+  display: block;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  z-index: 10;
+  left: -30px;
+  top: -20px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -841,146 +971,63 @@ p {
       transition: 0.5s;
     }
     &:nth-child(1):before {
-      content: '';
-      display: block;
-      position: relative;
+      @include project;
       background-image: url('~@/assets/images/vue.png');
-      width: 60px;
-      height: 60px;
-      z-index: 10;
-      left: -30px;
-      top: -20px;
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
       padding-bottom: -40px;
     }
     &:nth-child(2):before {
-      content: '';
-      display: block;
-      position: relative;
-      background-image: url('~@/assets/images/python.png');
-      width: 60px;
-      height: 60px;
-      z-index: 10;
-      left: -30px;
-      top: -20px;
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
+      @include project;
+      background-image: url('~@/assets/images/flask.png');
     }
     &:nth-child(3):before {
-      content: '';
-      display: block;
-      position: relative;
+      @include project;
       background-image: url('~@/assets/images/python.png');
-      width: 60px;
-      height: 60px;
-      z-index: 10;
-      left: -30px;
-      top: -20px;
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
     }
     &:nth-child(3):before {
-      content: '';
-      display: block;
-      position: relative;
+      @include project;
       background-image: url('~@/assets/images/python.png');
-      width: 60px;
-      height: 60px;
-      z-index: 10;
-      left: -30px;
-      top: -20px;
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
     }
     &:nth-child(4):before {
-      content: '';
-      display: block;
-      position: relative;
+      @include project;
       background-image: url('~@/assets/images/firealpaca.png');
-      width: 60px;
-      height: 60px;
-      z-index: 10;
-      left: -30px;
-      top: -20px;
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
     }
     &:nth-child(5):before {
-      content: '';
-      display: block;
-      position: relative;
-      background-image: url('~@/assets/images/css.png');
-      width: 60px;
-      height: 60px;
-      z-index: 10;
-      left: -30px;
-      top: -20px;
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
+      @include project;
+      background-image: url('~@/assets/images/java.png');
     }
     &:nth-child(6):before {
-      content: '';
-      display: block;
-      position: relative;
-      background-image: url('~@/assets/images/java.png');
-      width: 60px;
-      height: 60px;
-      z-index: 10;
-      left: -30px;
-      top: -20px;
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
+      @include project;
+      background-image: url('~@/assets/images/css.png');
     }
     &:nth-child(7):before {
-      content: '';
-      display: block;
-      position: relative;
+      @include project;
       background-image: url('~@/assets/images/ruby.png');
-      width: 60px;
-      height: 60px;
-      z-index: 10;
-      left: -30px;
-      top: -20px;
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
     }
     &:nth-child(8):before {
-      content: '';
-      display: block;
-      position: relative;
-      background-image: url('~@/assets/images/cs.png');
-      width: 60px;
-      height: 60px;
-      z-index: 10;
-      left: -30px;
-      top: -20px;
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
+      @include project;
+      background-image: url('~@/assets/images/ruby.png');
+      border-radius: 50%;
     }
     &:nth-child(9):before {
-      content: '';
-      display: block;
-      position: relative;
+      @include project;
+      background-image: url('~@/assets/images/vue.png');
+    }
+    &:nth-child(10):before {
+      @include project;
+      background-image: url('~@/assets/images/cs.png');
+    }
+    &:nth-child(11):before {
+      @include project;
+      background-image: url('~@/assets/images/nuxt.png');
+    }
+    &:nth-child(12):before {
+      @include project;
+      background-image: url('~@/assets/images/firealpaca.png');
+    }
+    &:nth-child(13):before {
+      @include project;
       background-image: url('~@/assets/images/github.jpg');
       border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      z-index: 10;
-      left: -30px;
-      top: -20px;
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
     }
   }
 }
