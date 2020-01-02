@@ -79,6 +79,7 @@ dist
 
 # IDE / Editor
 .idea
+.vscode
 
 # Service worker
 sw.*
@@ -88,3 +89,10 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# firebase
+.firebase
+.firebaserc
+404.html
+firebase.json
+index.html
