@@ -415,9 +415,9 @@
               </p>
               <p>：4回（100名以上2回、70名以上1回、30名以上1回）</p>
               <p>
-                ：contributions1900↑ Star<a class="star">★</a>50↑ Followers120↑
+                ：contributions1900↑ Star<a class="star">★</a>60↑ Followers130↑
               </p>
-              <p>：contributions750↑ トレンド入り4回</p>
+              <p>：contributions800↑ トレンド入り5回</p>
               <p>：アメーバブログで月36万PVの個人ブログの運営経験あり</p>
             </div>
           </div>
