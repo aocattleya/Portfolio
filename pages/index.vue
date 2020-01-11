@@ -82,7 +82,7 @@
                 />
                 <div class="projects__project__inner__description">
                   <p>
-                    GitHub<a class="star">★</a>20↑ Qiitaトレンド入り 登壇1回
+                    GitHub<a class="star">★</a>30↑ Qiitaトレンド入り 登壇1回
                   </p>
                   <p>【言語】JavaScript（Vue.js）</p>
                   <p>【使用】Firebase, PWA, SweetAlert</p>
@@ -415,9 +415,9 @@
               </p>
               <p>：4回（100名以上2回、70名以上1回、30名以上1回）</p>
               <p>
-                ：contributions1900↑ Star<a class="star">★</a>60↑ Followers130↑
+                ：Contributions1900↑ Star70↑ Followers140↑
               </p>
-              <p>：contributions800↑ トレンド入り5回</p>
+              <p>：Contributions1000↑ トレンド入り5回</p>
               <p>：アメーバブログで月36万PVの個人ブログの運営経験あり</p>
             </div>
           </div>
@@ -461,8 +461,30 @@
               </div>
             </div>
             <div class="other__tweet">
-              <!-- 1ツイート目 -->
               <div class="other__tweet--1">
+                <!-- 1ツイート目 -->
+                <blockquote class="twitter-tweet" data-lang="ja">
+                  <p lang="ja" dir="ltr">
+                    Qiitaデイリー1位 &amp;
+                    総Contribution1000ありがとうございます✨<br />今年の目標がこんなに早く同時に叶うとは思いませんでした..！
+                    <a href="https://t.co/tTc4VDymkJ"
+                      >pic.twitter.com/tTc4VDymkJ</a
+                    >
+                  </p>
+                  &mdash; aocattleya (@aocattleya)
+                  <a
+                    href="https://twitter.com/aocattleya/status/1215780083023011840?ref_src=twsrc%5Etfw"
+                    >2020年1月10日</a
+                  >
+                </blockquote>
+                <script
+                  async
+                  src="https://platform.twitter.com/widgets.js"
+                  charset="utf-8"
+                ></script>
+              </div>
+              <!-- 2ツイート目 -->
+              <div class="other__tweet--2">
                 <blockquote class="twitter-tweet" data-lang="ja">
                   <p lang="ja" dir="ltr">
                     まつもとゆきひろさんにサインしていただいて写真まで撮って貰えた😭ありがとうございます！宝物！！<a
@@ -483,8 +505,8 @@
                   charset="utf-8"
                 ></script>
               </div>
-              <!-- 2ツイート目 -->
-              <div class="other__tweet--2">
+              <!-- 3ツイート目 -->
+              <div class="other__tweet--3">
                 <blockquote class="twitter-tweet" data-lang="ja">
                   <p lang="ja" dir="ltr">
                     湊川 あい（<a
@@ -508,17 +530,15 @@
                 ></script>
               </div>
             </div>
-            <center>
-              <div class="speakerdeck">
-                <script
-                  async
-                  class="speakerdeck-embed"
-                  data-id="e0d151ad238746c49614f8436662bab7"
-                  data-ratio="1.77777777777778"
-                  src="//speakerdeck.com/assets/embed.js"
-                ></script>
-              </div>
-            </center>
+            <div class="speakerdeck">
+              <script
+                async
+                class="speakerdeck-embed"
+                data-id="e0d151ad238746c49614f8436662bab7"
+                data-ratio="1.77777777777778"
+                src="//speakerdeck.com/assets/embed.js"
+              ></script>
+            </div>
           </div>
 
           <!-- BACKボタン -->
@@ -1023,7 +1043,7 @@ p {
   margin: 0 auto;
   border: double 1px #283c5f;
   border-radius: 10px;
-  padding: 40px 60px 40px 130px;
+  padding: 40px 60px 25px 130px;
   text-align: left;
   display: flex;
   justify-content: center;
@@ -1083,21 +1103,25 @@ p {
   }
   &__tweet {
     display: flex;
-    justify-content: center;
-    margin: 50px 0 30px;
+    justify-content: space-between;
+    margin: 35px auto 30px;
+    flex-wrap: wrap;
+    width: 650px;
     &--1 {
-      width: 300px;
-      margin-right: 20px;
+      margin: 0 auto;
     }
     &--2 {
-      width: 300px;
+      width: 310px;
+    }
+    &--3 {
+      width: 310px;
     }
   }
 }
 
 .speakerdeck {
   max-width: 77%;
-  margin: 40px;
+  margin: 40px auto;
 }
 
 .back {
