@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <div class="profiles" v-if="isActive === false">
-      <div class="signboards" v-on:click="toggle_switch()">
+    <div v-if="isActive === false" class="profiles">
+      <div v-on:click="toggle_switch()" class="signboards">
         <div class="sign">作った物&実績</div>
         <div class="strings"></div>
         <div class="pin top"></div>
@@ -53,7 +53,7 @@
       </div>
     </div>
     <transition appear>
-      <div class="projects-content" v-if="isActive === true">
+      <div v-if="isActive === true" class="projects-content">
         <div class="projects-top">
           <div class="title-create">
             <div class="title-create__text">
@@ -415,9 +415,9 @@
               </p>
               <p>：4回（100名以上2回、70名以上1回、30名以上1回）</p>
               <p>
-                ：Contributions1900↑ Star70↑ Followers140↑
+                ：Contributions1900↑ Star70↑ Followers130↑
               </p>
-              <p>：Contributions1000↑ トレンド入り5回</p>
+              <p>：Contributions1300↑ トレンド入り5回</p>
               <p>：アメーバブログで月36万PVの個人ブログの運営経験あり</p>
             </div>
           </div>
@@ -540,10 +540,9 @@
               ></script>
             </div>
           </div>
-
           <!-- BACKボタン -->
           <div class="back">
-            <div class="back__text" v-on:click="toggle_switch()">
+            <div v-on:click="toggle_switch()" class="back__text">
               BACK
             </div>
           </div>
