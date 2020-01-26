@@ -45,7 +45,7 @@
           ></a>
           <a
             class="profiles__profile__links__output_logo"
-            href="https://cattleya.hatenablog.com/"
+            href="https://lapras.com/public/QIOCQBE"
             target="_blank"
             rel="noopener noreferrer"
           ></a>
@@ -82,7 +82,7 @@
                 />
                 <div class="projects__project__inner__description">
                   <p>
-                    GitHub<a class="star">★</a>30↑ Qiitaトレンド入り 登壇1回
+                    GitHub<a class="star">★</a>45↑ Qiitaトレンド入り 登壇1回
                   </p>
                   <p>【言語】JavaScript（Vue.js）</p>
                   <p>【使用】Firebase, PWA, SweetAlert</p>
@@ -107,7 +107,7 @@
                 />
                 <div class="projects__project__inner__description">
                   <p>
-                    GitHub<a class="star">★</a>10↑ Qiitaトレンド入り 登壇1回
+                    GitHub<a class="star">★</a>15↑ Qiitaトレンド入り 登壇1回
                   </p>
                   <p>【言語】Python（Flask）+ Vue.js</p>
                   <p>【使用】Elasticsearch, axios, WebAPI</p>
@@ -415,9 +415,9 @@
               </p>
               <p>：4回（100名以上2回、70名以上1回、30名以上1回）</p>
               <p>
-                ：Contributions1900↑ Star70↑ Followers130↑
+                ：Contributions2000↑ Star80↑ Followers150↑
               </p>
-              <p>：Contributions1300↑ トレンド入り5回</p>
+              <p>：Contributions1700↑ トレンド入り5回</p>
               <p>：アメーバブログで月36万PVの個人ブログの運営経験あり</p>
             </div>
           </div>
@@ -786,7 +786,7 @@ p {
         height: 110px;
         margin-top: 10px;
         box-shadow: rgba(79, 194, 220, 0.2) 0px 0px 20px;
-        background: url('~assets/images/hatena.jpg');
+        background: url('~assets/images/lapras.jpg');
         background-size: cover;
         background-position: center;
       }
