@@ -11,7 +11,8 @@ export default {
       { name: 'description', content: 'aocattleyaのリンクやアプリをまとめたポートフォリオサイトです。' },
       { name: 'keywords', content: 'aocattleya ポートフォリオ'}
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" }]
   },
   /*
    ** Customize the progress-bar color

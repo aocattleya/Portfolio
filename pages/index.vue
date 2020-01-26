@@ -8,10 +8,10 @@
         <div class="pin left"></div>
         <div class="pin right"></div>
       </div>
-      <div class="profiles__profile">
+      <div class="profiles__profile animated fadeIn">
         <img
           src="~/assets/images/aocattleya.jpg"
-          class="profiles__profile__logo"
+          class="profiles__profile__logo animated jello"
         />
         <img src="~/assets/images/name.png" class="profiles__profile__name" />
         <h2 class="profiles__profile__subtitle">
@@ -19,33 +19,33 @@
         </h2>
         <dev class="profiles__profile__links">
           <a
-            class="profiles__profile__links__output_logo"
+            class="profiles__profile__links__output_logo animated flipInX"
             href="https://connpass.com/user/aocattleya/"
             target="_blank"
             rel="noopener noreferrer"
           >
           </a>
           <a
-            class="profiles__profile__links__output_logo"
+            class="profiles__profile__links__output_logo animated flipInX"
             href="https://qiita.com/aocattleya"
             target="_blank"
             rel="noopener noreferrer"
           ></a>
           <a
-            class="profiles__profile__links__output_logo"
+            class="profiles__profile__links__output_logo animated flipInX"
             href="https://github.com/aocattleya"
             target="_blank"
             rel="noopener noreferrer"
           ></a>
           <a
-            class="profiles__profile__links__output_logo"
+            class="profiles__profile__links__output_logo animated flipInX"
             href="https://twitter.com/aocattleya"
             target="_blank"
             rel="noopener noreferrer"
           ></a>
           <a
-            class="profiles__profile__links__output_logo"
-            href="https://cattleya.hatenablog.com/"
+            class="profiles__profile__links__output_logo animated flipInX"
+            href="https://lapras.com/public/QIOCQBE"
             target="_blank"
             rel="noopener noreferrer"
           ></a>
@@ -64,7 +64,8 @@
           <div class="projects">
             <!-- ラーメンタイマー -->
             <a
-              class="projects__project"
+              class="projects__project animated fadeInLeft"
+              style="animation-delay: 0.5s;"
               href="https://github.com/aocattleya/Ramen-Timer"
               target="_blank"
               rel="noopener noreferrer"
@@ -82,7 +83,7 @@
                 />
                 <div class="projects__project__inner__description">
                   <p>
-                    GitHub<a class="star">★</a>30↑ Qiitaトレンド入り 登壇1回
+                    GitHub<a class="star">★</a>45↑ Qiitaトレンド入り 登壇1回
                   </p>
                   <p>【言語】JavaScript（Vue.js）</p>
                   <p>【使用】Firebase, PWA, SweetAlert</p>
@@ -91,7 +92,8 @@
             </a>
             <!-- 簡易書籍管理システム -->
             <a
-              class="projects__project"
+              class="projects__project animated fadeInLeft"
+              style="animation-delay: 0.6s;"
               href="https://github.com/aocattleya/MiniBookSearch"
               target="_blank"
               rel="noopener noreferrer"
@@ -107,7 +109,7 @@
                 />
                 <div class="projects__project__inner__description">
                   <p>
-                    GitHub<a class="star">★</a>10↑ Qiitaトレンド入り 登壇1回
+                    GitHub<a class="star">★</a>15↑ Qiitaトレンド入り 登壇1回
                   </p>
                   <p>【言語】Python（Flask）+ Vue.js</p>
                   <p>【使用】Elasticsearch, axios, WebAPI</p>
@@ -116,7 +118,8 @@
             </a>
             <!-- WordCloud-Japanese -->
             <a
-              class="projects__project"
+              class="projects__project animated fadeInLeft"
+              style="animation-delay: 0.7s;"
               href="https://github.com/aocattleya/WordCloud-Japanese"
               target="_blank"
               rel="noopener noreferrer"
@@ -141,7 +144,8 @@
             </a>
             <!-- OriginalCharacters -->
             <a
-              class="projects__project"
+              class="projects__project animated fadeInLeft"
+              style="animation-delay: 0.8s;"
               href="https://github.com/aocattleya/illustration-OriginalCharacters"
               target="_blank"
               rel="noopener noreferrer"
@@ -166,7 +170,8 @@
             </a>
             <!-- LeisurePass -->
             <a
-              class="projects__project"
+              class="projects__project animated fadeInLeft"
+              style="animation-delay: 0.9s;"
               href="https://github.com/aocattleya/LeisurePass"
               target="_blank"
               rel="noopener noreferrer"
@@ -188,7 +193,8 @@
             </a>
             <!-- NightSky-Background -->
             <a
-              class="projects__project"
+              class="projects__project animated fadeInLeft"
+              style="animation-delay: 1s;"
               href="https://github.com/aocattleya/NightSky-Background"
               target="_blank"
               rel="noopener noreferrer"
@@ -213,7 +219,8 @@
             </a>
             <!-- グループチャットアプリ -->
             <a
-              class="projects__project"
+              class="projects__project animated fadeInLeft"
+              style="animation-delay: 1.1s;"
               href="https://github.com/aocattleya/GroupChat-App"
               target="_blank"
               rel="noopener noreferrer"
@@ -239,7 +246,8 @@
             </a>
             <!-- メルカリ -->
             <a
-              class="projects__project"
+              class="projects__project animated fadeInLeft"
+              style="animation-delay: 1.2s;"
               href="https://github.com/aocattleya/Mercari_clone"
               target="_blank"
               rel="noopener noreferrer"
@@ -265,7 +273,8 @@
             </a>
             <!-- Vue-FormValidation -->
             <a
-              class="projects__project"
+              class="projects__project animated fadeInLeft"
+              style="animation-delay: 1.3s;"
               href="https://github.com/aocattleya/Vue-FormValidation"
               target="_blank"
               rel="noopener noreferrer"
@@ -290,7 +299,8 @@
             </a>
             <!-- ディスクトップアプリ -->
             <a
-              class="projects__project"
+              class="projects__project animated fadeInLeft"
+              style="animation-delay: 1.4s;"
               href="https://github.com/aocattleya/Visual_CSharpApps"
               target="_blank"
               rel="noopener noreferrer"
@@ -315,7 +325,8 @@
             </a>
             <!-- Portfolio -->
             <a
-              class="projects__project"
+              class="projects__project animated fadeInLeft"
+              style="animation-delay: 1.5s;"
               href="https://github.com/aocattleya/Portfolio"
               target="_blank"
               rel="noopener noreferrer"
@@ -340,7 +351,8 @@
             </a>
             <!-- Totoro-Layer -->
             <a
-              class="projects__project"
+              class="projects__project animated fadeInLeft"
+              style="animation-delay: 1.6s;"
               href="https://github.com/aocattleya/Totoro-Layer"
               target="_blank"
               rel="noopener noreferrer"
@@ -367,7 +379,8 @@
             </a>
             <!-- 他 -->
             <a
-              class="projects__project"
+              class="projects__project animated fadeInLeft"
+              style="animation-delay: 1.7s;"
               href="https://github.com/aocattleya?tab=repositories"
               target="_blank"
               rel="noopener noreferrer"
@@ -415,9 +428,9 @@
               </p>
               <p>：4回（100名以上2回、70名以上1回、30名以上1回）</p>
               <p>
-                ：Contributions1900↑ Star70↑ Followers130↑
+                ：Contributions2000↑ Star80↑ Followers150↑
               </p>
-              <p>：Contributions1300↑ トレンド入り5回</p>
+              <p>：Contributions1700↑ トレンド入り5回</p>
               <p>：アメーバブログで月36万PVの個人ブログの運営経験あり</p>
             </div>
           </div>
@@ -570,12 +583,11 @@ $font: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', 
   'ＭＳ Ｐゴシック', sans-serif;
 
 .v-enter-active {
-  transition: opacity 0.8s, transform 0.7s;
+  transition: opacity 0.5s, transform 0.5s;
 }
 
 .v-enter {
   opacity: 0;
-  transform: translateY(30px);
 }
 
 .container {
@@ -682,23 +694,6 @@ p {
   height: 100vh;
   margin-top: -40px;
   margin-bottom: -40px;
-  opacity: 0;
-  animation-name: anime;
-  animation-duration: 0.8s;
-  animation-timing-function: ease-out;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  @keyframes anime {
-    0% {
-      opacity: 0;
-      transform: translate3d(0, -20px, 0);
-    }
-    100% {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-    }
-  }
   &__profile {
     position: absolute;
     border: solid 5px #283c5f;
@@ -713,6 +708,7 @@ p {
     align-items: center;
     background-color: white;
     &__logo {
+      animation-delay: 2.5s;
       border-radius: 50%;
       width: 200px;
       display: block;
@@ -756,6 +752,7 @@ p {
         background: url('~assets/images/connpass.png');
         background-size: cover;
         background-position: center;
+        animation-delay: 0.4s;
       }
       &__output_logo:nth-child(2) {
         width: 120px;
@@ -764,6 +761,7 @@ p {
         background: url('~assets/images/qiita.png');
         background-size: cover;
         background-position: center;
+        animation-delay: 0.5s;
       }
       &__output_logo:nth-child(3) {
         width: 120px;
@@ -772,6 +770,7 @@ p {
         background: url('~assets/images/github.jpg');
         background-size: cover;
         background-position: center;
+        animation-delay: 0.6s;
       }
       &__output_logo:nth-child(4) {
         width: 120px;
@@ -780,15 +779,17 @@ p {
         background: url('~assets/images/twitter.png');
         background-size: cover;
         background-position: center;
+        animation-delay: 0.7s;
       }
       &__output_logo:nth-child(5) {
         width: 110px;
         height: 110px;
         margin-top: 10px;
         box-shadow: rgba(79, 194, 220, 0.2) 0px 0px 20px;
-        background: url('~assets/images/hatena.jpg');
+        background: url('~assets/images/lapras.jpg');
         background-size: cover;
         background-position: center;
+        animation-delay: 0.8s;
       }
     }
   }
@@ -851,6 +852,7 @@ p {
 
 .title-create {
   @include title;
+  animation-delay: 0.5s;
   .title-create__icon {
     display: block;
     position: absolute;
