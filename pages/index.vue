@@ -10,14 +10,21 @@
       </div>
       <div class="profiles__profile animated fadeIn">
         <img
+          v-on:click=";(rubberBand = !rubberBand), (jello = !jello)"
+          v-bind:class="{ rubberBand: rubberBand, jello: jello }"
           src="~/assets/images/aocattleya.jpg"
-          class="profiles__profile__logo animated jello"
+          class="profiles__profile__logo animated"
         />
-        <img src="~/assets/images/name.png" class="profiles__profile__name" />
+        <img
+          v-on:click="hinge = !hinge"
+          v-bind:class="{ hinge: hinge }"
+          src="~/assets/images/name.png"
+          class="profiles__profile__name animated"
+        />
         <h2 class="profiles__profile__subtitle">
           趣味でフロントエンドを主軸にWeb技術を学んでいます。+ 絵描き🎨
         </h2>
-        <dev class="profiles__profile__links">
+        <div class="profiles__profile__links">
           <a
             class="profiles__profile__links__output_logo animated flipInX"
             href="https://connpass.com/user/aocattleya/"
@@ -49,7 +56,7 @@
             target="_blank"
             rel="noopener noreferrer"
           ></a>
-        </dev>
+        </div>
       </div>
     </div>
     <transition appear>
@@ -65,7 +72,7 @@
             <!-- ラーメンタイマー -->
             <a
               class="projects__project animated fadeInLeft"
-              style="animation-delay: 0.5s;"
+              style="animation-delay: 0.4s;"
               href="https://github.com/aocattleya/Ramen-Timer"
               target="_blank"
               rel="noopener noreferrer"
@@ -79,7 +86,6 @@
                   class="projects__project__inner__img"
                   src="~assets/images/timer.gif"
                   alt="ramen-timer"
-                  loading="lazy"
                 />
                 <div class="projects__project__inner__description">
                   <p>
@@ -93,7 +99,7 @@
             <!-- 簡易書籍管理システム -->
             <a
               class="projects__project animated fadeInLeft"
-              style="animation-delay: 0.6s;"
+              style="animation-delay: 0.5s;"
               href="https://github.com/aocattleya/MiniBookSearch"
               target="_blank"
               rel="noopener noreferrer"
@@ -105,7 +111,6 @@
                   class="projects__project__inner__img"
                   src="~assets/images/MiniBookSearch.png"
                   alt="ramen-timer"
-                  loading="lazy"
                 />
                 <div class="projects__project__inner__description">
                   <p>
@@ -119,7 +124,7 @@
             <!-- WordCloud-Japanese -->
             <a
               class="projects__project animated fadeInLeft"
-              style="animation-delay: 0.7s;"
+              style="animation-delay: 0.6s;"
               href="https://github.com/aocattleya/WordCloud-Japanese"
               target="_blank"
               rel="noopener noreferrer"
@@ -133,7 +138,6 @@
                   class="projects__project__inner__img"
                   src="~assets/images/WordCloud.png"
                   alt="ramen-timer"
-                  loading="lazy"
                 />
                 <div class="projects__project__inner__description">
                   <p>登壇2回</p>
@@ -145,7 +149,7 @@
             <!-- OriginalCharacters -->
             <a
               class="projects__project animated fadeInLeft"
-              style="animation-delay: 0.8s;"
+              style="animation-delay: 0.7s;"
               href="https://github.com/aocattleya/illustration-OriginalCharacters"
               target="_blank"
               rel="noopener noreferrer"
@@ -159,7 +163,6 @@
                   class="projects__project__inner__img"
                   src="~assets/images/illustration.jpg"
                   alt="ramen-timer"
-                  loading="lazy"
                 />
                 <div class="projects__project__inner__description">
                   <p></p>
@@ -171,7 +174,7 @@
             <!-- LeisurePass -->
             <a
               class="projects__project animated fadeInLeft"
-              style="animation-delay: 0.9s;"
+              style="animation-delay: 0.8s;"
               href="https://github.com/aocattleya/LeisurePass"
               target="_blank"
               rel="noopener noreferrer"
@@ -183,7 +186,6 @@
                   class="projects__project__inner__img"
                   src="~assets/images/LeisurePass.png"
                   alt="ramen-timer"
-                  loading="lazy"
                 />
                 <div class="projects__project__inner__description">
                   <p></p>
@@ -194,7 +196,7 @@
             <!-- NightSky-Background -->
             <a
               class="projects__project animated fadeInLeft"
-              style="animation-delay: 1s;"
+              style="animation-delay: 0.9s;"
               href="https://github.com/aocattleya/NightSky-Background"
               target="_blank"
               rel="noopener noreferrer"
@@ -208,7 +210,6 @@
                   class="projects__project__inner__img"
                   src="~assets/images/NightSky.gif"
                   alt="ramen-timer"
-                  loading="lazy"
                 />
                 <div class="projects__project__inner__description">
                   <p>登壇1回</p>
@@ -220,7 +221,7 @@
             <!-- グループチャットアプリ -->
             <a
               class="projects__project animated fadeInLeft"
-              style="animation-delay: 1.1s;"
+              style="animation-delay: 1s;"
               href="https://github.com/aocattleya/GroupChat-App"
               target="_blank"
               rel="noopener noreferrer"
@@ -234,7 +235,6 @@
                   class="projects__project__inner__img"
                   src="~assets/images/GroupChat.gif"
                   alt="ramen-timer"
-                  loading="lazy"
                 />
                 <div class="projects__project__inner__description">
                   <p></p>
@@ -247,7 +247,7 @@
             <!-- メルカリ -->
             <a
               class="projects__project animated fadeInLeft"
-              style="animation-delay: 1.2s;"
+              style="animation-delay: 1.1s;"
               href="https://github.com/aocattleya/Mercari_clone"
               target="_blank"
               rel="noopener noreferrer"
@@ -261,7 +261,6 @@
                   class="projects__project__inner__img"
                   src="~assets/images/mercari.png"
                   alt="ramen-timer"
-                  loading="lazy"
                 />
                 <div class="projects__project__inner__description">
                   <p>登壇1回</p>
@@ -274,7 +273,7 @@
             <!-- Vue-FormValidation -->
             <a
               class="projects__project animated fadeInLeft"
-              style="animation-delay: 1.3s;"
+              style="animation-delay: 1.2s;"
               href="https://github.com/aocattleya/Vue-FormValidation"
               target="_blank"
               rel="noopener noreferrer"
@@ -288,7 +287,6 @@
                   class="projects__project__inner__img"
                   src="~assets/images/FormValidation.gif"
                   alt="ramen-timer"
-                  loading="lazy"
                 />
                 <div class="projects__project__inner__description">
                   <p></p>
@@ -300,7 +298,7 @@
             <!-- ディスクトップアプリ -->
             <a
               class="projects__project animated fadeInLeft"
-              style="animation-delay: 1.4s;"
+              style="animation-delay: 1.3s;"
               href="https://github.com/aocattleya/Visual_CSharpApps"
               target="_blank"
               rel="noopener noreferrer"
@@ -314,7 +312,6 @@
                   class="projects__project__inner__img"
                   src="~assets/images/CSharp.jpg"
                   alt="ramen-timer"
-                  loading="lazy"
                 />
                 <div class="projects__project__inner__description">
                   <p></p>
@@ -326,7 +323,7 @@
             <!-- Portfolio -->
             <a
               class="projects__project animated fadeInLeft"
-              style="animation-delay: 1.5s;"
+              style="animation-delay: 1.4s;"
               href="https://github.com/aocattleya/Portfolio"
               target="_blank"
               rel="noopener noreferrer"
@@ -340,19 +337,18 @@
                   class="projects__project__inner__img"
                   src="~assets/images/portfolio.png"
                   alt="ramen-timer"
-                  loading="lazy"
                 />
                 <div class="projects__project__inner__description">
                   <p>登壇1回</p>
                   <p>【言語】JavaScript（Nuxt.js）</p>
-                  <p>【使用】Firebase</p>
+                  <p>【使用】Animate.css, Firebase</p>
                 </div>
               </div>
             </a>
             <!-- Totoro-Layer -->
             <a
               class="projects__project animated fadeInLeft"
-              style="animation-delay: 1.6s;"
+              style="animation-delay: 1.5s;"
               href="https://github.com/aocattleya/Totoro-Layer"
               target="_blank"
               rel="noopener noreferrer"
@@ -366,7 +362,6 @@
                   class="projects__project__inner__img"
                   src="~assets/images/totoro.png"
                   alt="ramen-timer"
-                  loading="lazy"
                 />
                 <div class="projects__project__inner__description">
                   <p></p>
@@ -380,7 +375,7 @@
             <!-- 他 -->
             <a
               class="projects__project animated fadeInLeft"
-              style="animation-delay: 1.7s;"
+              style="animation-delay: 1.6s;"
               href="https://github.com/aocattleya?tab=repositories"
               target="_blank"
               rel="noopener noreferrer"
@@ -393,7 +388,6 @@
                   class="projects__project__inner__img"
                   src="~assets/images/kurin-github.png"
                   alt="ramen-timer"
-                  loading="lazy"
                 />
                 <div class="projects__project__inner__description">
                   <p>現在、40個以上のリポジトリがあります。</p>
@@ -554,8 +548,8 @@
             </div>
           </div>
           <!-- BACKボタン -->
-          <div class="back">
-            <div v-on:click="toggle_switch()" class="back__text">
+          <div v-on:click="toggle_switch(), hinge_return()" class="back">
+            <div class="back__text">
               BACK
             </div>
           </div>
@@ -713,11 +707,13 @@ p {
       width: 200px;
       display: block;
       margin: 0 auto;
+      cursor: pointer;
     }
     &__name {
       background: url('~assets/images/name.png');
       width: 400px;
       margin-bottom: 20px;
+      cursor: pointer;
     }
     &__subtitle {
       @include text;
@@ -1044,7 +1040,7 @@ p {
   margin: 0 auto;
   border: double 1px #283c5f;
   border-radius: 10px;
-  padding: 40px 60px 25px 130px;
+  padding: 40px 60px 25px 100px;
   text-align: left;
   display: flex;
   justify-content: center;
@@ -1147,18 +1143,30 @@ p {
   cursor: pointer;
   text-decoration: none;
 }
+
+@media only screen and (max-width: 1000px) {
+  .achievement {
+    padding: 40px 30px 25px 30px;
+  }
+}
 </style>
 
 <script>
 export default {
   data() {
     return {
-      isActive: false
+      isActive: false,
+      hinge: false,
+      rubberBand: false,
+      jello: true
     }
   },
   methods: {
     toggle_switch() {
       this.isActive = !this.isActive
+    },
+    hinge_return() {
+      this.hinge = false
     }
   }
 }
