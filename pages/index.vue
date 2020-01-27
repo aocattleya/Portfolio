@@ -1,31 +1,44 @@
 <template>
-  <div class="container">
+  <div v-bind:class="{ hinge: bom }" class="container animated">
     <div v-if="isActive === false" class="profiles">
-      <div v-on:click="toggle_switch()" class="signboards">
-        <div class="sign">作った物&実績</div>
-        <div class="strings"></div>
-        <div class="pin top"></div>
-        <div class="pin left"></div>
-        <div class="pin right"></div>
+      <div
+        v-bind:class="{ hinge: bom1, signboards: signboards }"
+        v-on:click="toggle_switch()"
+      >
+        <div v-bind:class="{ hinge: bom2, sign: sign }">{{ msg }}</div>
+        <div v-bind:class="{ hinge: bom2, strings: strings }"></div>
+        <div v-bind:class="{ hinge: bom2, pin: pin, top: top }"></div>
+        <div v-bind:class="{ hinge: bom2, pin: pin, left: left }"></div>
+        <div v-bind:class="{ hinge: bom2, pin: pin, right: right }"></div>
       </div>
       <div class="profiles__profile animated fadeIn">
         <img
-          v-on:click=";(rubberBand = !rubberBand), (jello = !jello)"
-          v-bind:class="{ rubberBand: rubberBand, jello: jello }"
-          src="~/assets/images/aocattleya.jpg"
+          v-on:click=";(rubberBand = !rubberBand), (jello = !jello), collapse()"
+          v-bind:class="{
+            rubberBand: rubberBand,
+            jello: jello,
+            bounceOutUp: bom1
+          }"
+          :src="image_src"
           class="profiles__profile__logo animated"
         />
         <img
-          v-on:click="hinge = !hinge"
-          v-bind:class="{ hinge: hinge }"
+          v-bind:class="{ hinge: bom3 }"
           src="~/assets/images/name.png"
           class="profiles__profile__name animated"
         />
-        <h2 class="profiles__profile__subtitle">
-          趣味でフロントエンドを主軸にWeb技術を学んでいます。+ 絵描き🎨
+        <h2
+          v-bind:class="{ hinge: bom4 }"
+          class="profiles__profile__subtitle animated"
+        >
+          {{ sub_msg }}
         </h2>
-        <div class="profiles__profile__links">
+        <div
+          v-bind:class="{ hinge: bom5 }"
+          class="profiles__profile__links animated"
+        >
           <a
+            v-bind:class="{ hinge: bom6 }"
             class="profiles__profile__links__output_logo animated flipInX"
             href="https://connpass.com/user/aocattleya/"
             target="_blank"
@@ -33,24 +46,28 @@
           >
           </a>
           <a
+            v-bind:class="{ hinge: bom7 }"
             class="profiles__profile__links__output_logo animated flipInX"
             href="https://qiita.com/aocattleya"
             target="_blank"
             rel="noopener noreferrer"
           ></a>
           <a
+            v-bind:class="{ hinge: bom8 }"
             class="profiles__profile__links__output_logo animated flipInX"
             href="https://github.com/aocattleya"
             target="_blank"
             rel="noopener noreferrer"
           ></a>
           <a
+            v-bind:class="{ hinge: bom9 }"
             class="profiles__profile__links__output_logo animated flipInX"
             href="https://twitter.com/aocattleya"
             target="_blank"
             rel="noopener noreferrer"
           ></a>
           <a
+            v-bind:class="{ hinge: bom10 }"
             class="profiles__profile__links__output_logo animated flipInX"
             href="https://lapras.com/public/QIOCQBE"
             target="_blank"
@@ -550,7 +567,8 @@
           <!-- BACKボタン -->
           <div v-on:click="toggle_switch(), hinge_return()" class="back">
             <div class="back__text">
-              BACK
+              <b>TOP</b>
+              <span>（TOPのキャラクターロゴを10回押すと・・・？）</span>
             </div>
           </div>
         </div>
@@ -713,12 +731,12 @@ p {
       background: url('~assets/images/name.png');
       width: 400px;
       margin-bottom: 20px;
-      cursor: pointer;
     }
     &__subtitle {
       @include text;
       font-weight: 300;
       margin-bottom: 10px;
+      display: block;
     }
     &__links {
       width: 670px;
@@ -1155,10 +1173,32 @@ p {
 export default {
   data() {
     return {
+      image_src: require('~/assets/images/aocattleya.jpg'),
+      msg: '作った物&実績',
+      sub_msg: '趣味でフロントエンドを主軸にWeb技術を学んでいます。+ 絵描き🎨',
       isActive: false,
-      hinge: false,
       rubberBand: false,
-      jello: true
+      jello: true,
+      pulse: false,
+      bomCount: null,
+      signboards: true,
+      sign: true,
+      strings: true,
+      pin: true,
+      top: true,
+      left: true,
+      right: true,
+      bom: false,
+      bom1: false,
+      bom2: false,
+      bom3: false,
+      bom4: false,
+      bom5: false,
+      bom6: false,
+      bom7: false,
+      bom8: false,
+      bom9: false,
+      bom10: false
     }
   },
   methods: {
@@ -1166,7 +1206,92 @@ export default {
       this.isActive = !this.isActive
     },
     hinge_return() {
-      this.hinge = false
+      if (this.hinge === false) {
+        this.hinge = true
+      } else {
+        this.hinge = false
+      }
+    },
+    collapse() {
+      this.bomCount += 1
+      if (this.bomCount === 10) {
+        this.image_src = require('~/assets/images/aocattleyaSorrow.jpg')
+        this.msg = ''
+        this.jello = false
+        this.signboards = false
+        this.sign = false
+        this.strings = false
+        this.pin = false
+        this.top = false
+        this.left = false
+        this.right = false
+        setTimeout(
+          function() {
+            this.bom = true
+          }.bind(this),
+          6500
+        )
+        setTimeout(
+          function() {
+            this.bom1 = true
+          }.bind(this),
+          2200
+        )
+        setTimeout(
+          function() {
+            this.bom2 = true
+          }.bind(this),
+          1400
+        )
+        setTimeout(
+          function() {
+            this.bom3 = true
+          }.bind(this),
+          300
+        )
+        setTimeout(
+          function() {
+            this.bom4 = true
+          }.bind(this),
+          2000
+        )
+        setTimeout(
+          function() {
+            this.bom5 = true
+          }.bind(this),
+          5500
+        )
+        setTimeout(
+          function() {
+            this.bom6 = true
+          }.bind(this),
+          1800
+        )
+        setTimeout(
+          function() {
+            this.bom7 = true
+          }.bind(this),
+          2300
+        )
+        setTimeout(
+          function() {
+            this.bom8 = true
+          }.bind(this),
+          2800
+        )
+        setTimeout(
+          function() {
+            this.bom9 = true
+          }.bind(this),
+          1500
+        )
+        setTimeout(
+          function() {
+            this.bom10 = true
+          }.bind(this),
+          2500
+        )
+      }
     }
   }
 }
