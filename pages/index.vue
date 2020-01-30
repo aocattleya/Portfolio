@@ -352,7 +352,7 @@
                 <p>Nuxt.jsでポートフォリオ</p>
                 <img
                   class="projects__project__inner__img"
-                  src="~assets/images/portfolio.png"
+                  src="~assets/images/aocattleyaSite.gif"
                   alt="ramen-timer"
                 />
                 <div class="projects__project__inner__description">
@@ -439,7 +439,7 @@
               </p>
               <p>：4回（100名以上2回、70名以上1回、30名以上1回）</p>
               <p>
-                ：Contributions2000↑ Star80↑ Followers150↑
+                ：Contributions2000↑ Star90↑ Followers150↑
               </p>
               <p>：Contributions1700↑ トレンド入り5回</p>
               <p>：アメーバブログで月36万PVの個人ブログの運営経験あり</p>
