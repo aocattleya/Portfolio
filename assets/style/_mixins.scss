@@ -1,0 +1,61 @@
+@mixin output_logo {
+  display: block;
+  box-shadow: rgba(79, 194, 220, 0.2) 0px 0px 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin title {
+  width: 500px;
+  height: 80px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  padding-top: 18px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    border: solid 2px #283c5f;
+    width: 500px;
+    height: 80px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    padding-top: 18px;
+    top: 4px;
+    left: 4px;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    border: solid 2px #283c5f;
+    width: 500px;
+    height: 80px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    padding-top: 18px;
+    top: -4px;
+    left: -4px;
+  }
+  &__text {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+  }
+}
+
+@mixin language_icon {
+  content: '';
+  display: block;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  z-index: 10;
+  left: -30px;
+  top: -20px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}

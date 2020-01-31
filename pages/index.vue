@@ -1,44 +1,41 @@
 <template>
-  <div v-bind:class="{ hinge: bom }" class="container animated">
+  <div :class="{ hinge: bom }" class="container animated">
     <div v-if="isActive === false" class="profiles">
       <div
-        v-bind:class="{ hinge: bom1, signboards: signboards }"
-        v-on:click="toggle_switch()"
+        :class="{ hinge: bom1, signboard: signboard }"
+        v-on:click="toggleSwitch()"
       >
-        <div v-bind:class="{ hinge: bom2, sign: sign }">{{ msg }}</div>
-        <div v-bind:class="{ hinge: bom2, strings: strings }"></div>
-        <div v-bind:class="{ hinge: bom2, pin: pin, top: top }"></div>
-        <div v-bind:class="{ hinge: bom2, pin: pin, left: left }"></div>
-        <div v-bind:class="{ hinge: bom2, pin: pin, right: right }"></div>
+        <div :class="{ hinge: bom2, sign: sign }">{{ signboardMsg }}</div>
+        <div :class="{ hinge: bom2, strings: strings }"></div>
+        <div :class="{ hinge: bom2, pin: pin, top: top }"></div>
+        <div :class="{ hinge: bom2, pin: pin, left: left }"></div>
+        <div :class="{ hinge: bom2, pin: pin, right: right }"></div>
       </div>
       <div class="profiles__profile animated fadeIn">
         <img
           v-on:click=";(rubberBand = !rubberBand), (jello = !jello), collapse()"
-          v-bind:class="{
+          :class="{
             rubberBand: rubberBand,
             jello: jello,
             bounceOutUp: bom1
           }"
-          :src="image_src"
+          :src="imageSrc"
           class="profiles__profile__logo animated"
         />
         <img
-          v-bind:class="{ hinge: bom3 }"
+          :class="{ hinge: bom3 }"
           src="~/assets/images/name.png"
           class="profiles__profile__name animated"
         />
         <h2
-          v-bind:class="{ hinge: bom4 }"
+          :class="{ hinge: bom4 }"
           class="profiles__profile__subtitle animated"
         >
-          {{ sub_msg }}
+          {{ description }}
         </h2>
-        <div
-          v-bind:class="{ hinge: bom5 }"
-          class="profiles__profile__links animated"
-        >
+        <div :class="{ hinge: bom5 }" class="profiles__profile__links animated">
           <a
-            v-bind:class="{ hinge: bom6 }"
+            :class="{ hinge: bom6 }"
             class="profiles__profile__links__output_logo animated flipInX"
             href="https://connpass.com/user/aocattleya/"
             target="_blank"
@@ -46,28 +43,28 @@
           >
           </a>
           <a
-            v-bind:class="{ hinge: bom7 }"
+            :class="{ hinge: bom7 }"
             class="profiles__profile__links__output_logo animated flipInX"
             href="https://qiita.com/aocattleya"
             target="_blank"
             rel="noopener noreferrer"
           ></a>
           <a
-            v-bind:class="{ hinge: bom8 }"
+            :class="{ hinge: bom8 }"
             class="profiles__profile__links__output_logo animated flipInX"
             href="https://github.com/aocattleya"
             target="_blank"
             rel="noopener noreferrer"
           ></a>
           <a
-            v-bind:class="{ hinge: bom9 }"
+            :class="{ hinge: bom9 }"
             class="profiles__profile__links__output_logo animated flipInX"
             href="https://twitter.com/aocattleya"
             target="_blank"
             rel="noopener noreferrer"
           ></a>
           <a
-            v-bind:class="{ hinge: bom10 }"
+            :class="{ hinge: bom10 }"
             class="profiles__profile__links__output_logo animated flipInX"
             href="https://lapras.com/public/QIOCQBE"
             target="_blank"
@@ -432,7 +429,7 @@
             <div class="achievement__right">
               <p>
                 ：優秀新人社員賞（平成31年3月29日）<a
-                  class="achievement__right__company"
+                  class="achievement__right--company"
                 >
                   Leading Edge Co.,Ltd.</a
                 >
@@ -565,7 +562,7 @@
             </div>
           </div>
           <!-- BACKボタン -->
-          <div v-on:click="toggle_switch(), hinge_return()" class="back">
+          <div v-on:click="toggleSwitch(), hingeReturn()" class="back">
             <div class="back__text">
               <b>TOP</b>
               <span>（TOPのキャラクターロゴを10回押すと・・・？）</span>
@@ -578,29 +575,8 @@
 </template>
 
 <style lang="scss">
-* {
-  font-family: font;
-  margin: 0;
-  padding: 0;
-}
-
-@mixin text {
-  font-size: 20px;
-  color: #526488;
-  word-spacing: 5px;
-  margin-top: 20px;
-}
-
-$font: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo,
-  'ＭＳ Ｐゴシック', sans-serif;
-
-.v-enter-active {
-  transition: opacity 0.5s, transform 0.5s;
-}
-
-.v-enter {
-  opacity: 0;
-}
+@import '~assets/style/_signboard.scss';
+@import '~assets/style/_mixins.scss';
 
 .container {
   margin: 0 auto;
@@ -615,90 +591,6 @@ $font: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', 
   object-fit: cover;
   position: relative;
   background: url('~assets/images/aotama.png');
-}
-
-.signboards {
-  position: absolute;
-  top: 32px;
-  right: 100px;
-  width: 400px;
-  height: 300px;
-  margin-left: 500px;
-  animation: swinging 4s ease-in-out infinite alternate;
-  z-index: 1;
-  opacity: 1;
-  cursor: pointer;
-}
-
-.signboards .sign {
-  position: absolute;
-  top: 100px;
-  left: 38px;
-  bottom: 0;
-  width: 80%;
-  height: 150px;
-  background: burlywood;
-  border-radius: 15px;
-  line-height: 175px;
-  text-align: center;
-  font-size: 40px;
-  font-weight: 700;
-  font-family: sans-serif;
-  color: saddlebrown;
-  text-shadow: 0 2px 0 rgba(255, 255, 255, 0.3), 0 -2px 0 rgba(0, 0, 0, 0.7);
-  font-family: font;
-}
-
-.strings {
-  position: absolute;
-  top: 38px;
-  left: 125px;
-  width: 150px;
-  height: 150px;
-  border: 5px solid brown;
-  transform: rotate(45deg);
-  border-right: none;
-  border-bottom: none;
-}
-
-.pin {
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-}
-
-.pin.top {
-  background: gray;
-  left: calc((400px - 25px) / 2);
-}
-
-.pin.right,
-.pin.left {
-  background: brown;
-  top: 110px;
-  box-shadow: 0 2px 0 rgba(255, 255, 255, 0.3);
-}
-
-.pin.left {
-  left: calc((200px - 25px) / 2);
-}
-
-.pin.right {
-  left: calc(200px + (200px - 25px) / 2);
-}
-
-@keyframes swinging {
-  from {
-    transform: rotate(10deg) translateX(-22px);
-  }
-  to {
-    transform: rotate(-10deg) translateX(22px);
-  }
-}
-
-p {
-  font-size: 14px;
 }
 
 .profiles {
@@ -733,7 +625,10 @@ p {
       margin-bottom: 20px;
     }
     &__subtitle {
-      @include text;
+      font-size: 20px;
+      color: #526488;
+      word-spacing: 5px;
+      margin-top: 20px;
       font-weight: 300;
       margin-bottom: 10px;
       display: block;
@@ -758,52 +653,41 @@ p {
         background-position: center;
       }
       &__output_logo:nth-child(1) {
-        display: block;
+        background: url('~assets/images/connpass.png');
         width: 110px;
         height: 110px;
         margin-top: 10px;
-        box-shadow: rgba(79, 194, 220, 0.2) 0px 0px 20px;
-        background: url('~assets/images/connpass.png');
-        background-size: cover;
-        background-position: center;
         animation-delay: 0.4s;
+        @include output_logo;
       }
       &__output_logo:nth-child(2) {
+        background: url('~assets/images/qiita.png');
         width: 120px;
         height: 120px;
-        box-shadow: rgba(79, 194, 220, 0.2) 0px 0px 20px;
-        background: url('~assets/images/qiita.png');
-        background-size: cover;
-        background-position: center;
         animation-delay: 0.5s;
+        @include output_logo;
       }
       &__output_logo:nth-child(3) {
+        background: url('~assets/images/github.jpg');
         width: 120px;
         height: 120px;
-        box-shadow: rgba(79, 194, 220, 0.2) 0px 0px 20px;
-        background: url('~assets/images/github.jpg');
-        background-size: cover;
-        background-position: center;
         animation-delay: 0.6s;
+        @include output_logo;
       }
       &__output_logo:nth-child(4) {
+        background: url('~assets/images/twitter.png');
         width: 120px;
         height: 120px;
-        box-shadow: rgba(79, 194, 220, 0.2) 0px 0px 20px;
-        background: url('~assets/images/twitter.png');
-        background-size: cover;
-        background-position: center;
         animation-delay: 0.7s;
+        @include output_logo;
       }
       &__output_logo:nth-child(5) {
+        background: url('~assets/images/lapras.jpg');
         width: 110px;
         height: 110px;
         margin-top: 10px;
-        box-shadow: rgba(79, 194, 220, 0.2) 0px 0px 20px;
-        background: url('~assets/images/lapras.jpg');
-        background-size: cover;
-        background-position: center;
         animation-delay: 0.8s;
+        @include output_logo;
       }
     }
   }
@@ -821,47 +705,6 @@ p {
   border: solid 5px #283c5f;
   margin: 0 auto;
   background-color: white;
-}
-
-@mixin title {
-  width: 500px;
-  height: 80px;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  box-sizing: border-box;
-  padding-top: 18px;
-  position: relative;
-  &::before {
-    content: '';
-    position: absolute;
-    border: solid 2px #283c5f;
-    width: 500px;
-    height: 80px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    box-sizing: border-box;
-    padding-top: 18px;
-    top: 4px;
-    left: 4px;
-  }
-  &::after {
-    content: '';
-    position: absolute;
-    border: solid 2px #283c5f;
-    width: 500px;
-    height: 80px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    box-sizing: border-box;
-    padding-top: 18px;
-    top: -4px;
-    left: -4px;
-  }
-  &__text {
-    font-size: 30px;
-    font-weight: bold;
-    font-style: normal;
-  }
 }
 
 .title-create {
@@ -926,20 +769,6 @@ p {
   }
 }
 
-@mixin project {
-  content: '';
-  display: block;
-  position: relative;
-  width: 60px;
-  height: 60px;
-  z-index: 10;
-  left: -30px;
-  top: -20px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -992,61 +821,61 @@ p {
       transition: 0.5s;
     }
     &:nth-child(1):before {
-      @include project;
+      @include language_icon;
       background-image: url('~@/assets/images/vue.png');
       padding-bottom: -40px;
     }
     &:nth-child(2):before {
-      @include project;
+      @include language_icon;
       background-image: url('~@/assets/images/flask.png');
     }
     &:nth-child(3):before {
-      @include project;
+      @include language_icon;
       background-image: url('~@/assets/images/python.png');
     }
     &:nth-child(3):before {
-      @include project;
+      @include language_icon;
       background-image: url('~@/assets/images/python.png');
     }
     &:nth-child(4):before {
-      @include project;
+      @include language_icon;
       background-image: url('~@/assets/images/firealpaca.png');
     }
     &:nth-child(5):before {
-      @include project;
+      @include language_icon;
       background-image: url('~@/assets/images/java.png');
     }
     &:nth-child(6):before {
-      @include project;
+      @include language_icon;
       background-image: url('~@/assets/images/css.png');
     }
     &:nth-child(7):before {
-      @include project;
+      @include language_icon;
       background-image: url('~@/assets/images/ruby.png');
     }
     &:nth-child(8):before {
-      @include project;
+      @include language_icon;
       background-image: url('~@/assets/images/ruby.png');
       border-radius: 50%;
     }
     &:nth-child(9):before {
-      @include project;
+      @include language_icon;
       background-image: url('~@/assets/images/vue.png');
     }
     &:nth-child(10):before {
-      @include project;
+      @include language_icon;
       background-image: url('~@/assets/images/cs.png');
     }
     &:nth-child(11):before {
-      @include project;
+      @include language_icon;
       background-image: url('~@/assets/images/nuxt.png');
     }
     &:nth-child(12):before {
-      @include project;
+      @include language_icon;
       background-image: url('~@/assets/images/firealpaca.png');
     }
     &:nth-child(13):before {
-      @include project;
+      @include language_icon;
       background-image: url('~@/assets/images/github.jpg');
       border-radius: 50%;
     }
@@ -1073,15 +902,9 @@ p {
     p {
       margin-bottom: 15px;
     }
-    &__company {
-      font-size: 12px;
-    }
-    .star {
-      -webkit-text-stroke: 0.5px black;
-      color: #f9f921;
-      padding: 0 0.5px 2px 2px;
-      font-size: 12px;
-    }
+  }
+  &__right--company {
+    font-size: 12px;
   }
 }
 
@@ -1122,15 +945,15 @@ p {
     margin: 35px auto 30px;
     flex-wrap: wrap;
     width: 650px;
-    &--1 {
-      margin: 0 auto;
-    }
-    &--2 {
-      width: 310px;
-    }
-    &--3 {
-      width: 310px;
-    }
+  }
+  &__tweet--1 {
+    margin: 0 auto;
+  }
+  &__tweet--2 {
+    width: 310px;
+  }
+  &__tweet--3 {
+    width: 310px;
   }
 }
 
@@ -1153,13 +976,12 @@ p {
   padding: 10px;
   border-radius: 5px;
   transition: 0.4s;
-}
-
-.back:hover {
-  background: #1b1b1b;
-  color: #fff;
-  cursor: pointer;
-  text-decoration: none;
+  &:hover {
+    background: #1b1b1b;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1173,15 +995,16 @@ p {
 export default {
   data() {
     return {
-      image_src: require('~/assets/images/aocattleya.jpg'),
-      msg: '作った物&実績',
-      sub_msg: '趣味でフロントエンドを主軸にWeb技術を学んでいます。+ 絵描き🎨',
+      imageSrc: require('~/assets/images/aocattleya.jpg'),
+      signboardMsg: '作った物&実績',
+      description:
+        '趣味でフロントエンドを主軸にWeb技術を学んでいます。+ 絵描き🎨',
       isActive: false,
       rubberBand: false,
       jello: true,
       pulse: false,
       bomCount: null,
-      signboards: true,
+      signboard: true,
       sign: true,
       strings: true,
       pin: true,
@@ -1202,10 +1025,10 @@ export default {
     }
   },
   methods: {
-    toggle_switch() {
+    toggleSwitch() {
       this.isActive = !this.isActive
     },
-    hinge_return() {
+    hingeReturn() {
       if (this.hinge === false) {
         this.hinge = true
       } else {
@@ -1215,10 +1038,10 @@ export default {
     collapse() {
       this.bomCount += 1
       if (this.bomCount === 10) {
-        this.image_src = require('~/assets/images/aocattleyaSorrow.jpg')
-        this.msg = ''
+        this.imageSrc = require('~/assets/images/aocattleyaSorrow.jpg')
+        this.signboardMsg = ''
         this.jello = false
-        this.signboards = false
+        this.signboard = false
         this.sign = false
         this.strings = false
         this.pin = false
