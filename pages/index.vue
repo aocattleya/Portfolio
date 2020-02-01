@@ -83,334 +83,19 @@
             </div>
           </div>
           <div class="projects">
-            <!-- ラーメンタイマー -->
-            <a
-              class="projects__project animated fadeInLeft"
-              style="animation-delay: 0.4s;"
-              href="https://github.com/aocattleya/Ramen-Timer"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div class="projects__project__inner">
-                <h4 class="projects__project__inner__title">
-                  ラーメンタイマー
-                </h4>
-                <p>カップラーメンのタイマーアプリ</p>
-                <img
-                  class="projects__project__inner__img"
-                  src="~assets/images/timer.gif"
-                  alt="ramen-timer"
-                />
-                <div class="projects__project__inner__description">
-                  <p>
-                    GitHub<a class="star">★</a>45↑ Qiitaトレンド入り 登壇1回
-                  </p>
-                  <p>【言語】JavaScript（Vue.js）</p>
-                  <p>【使用】Firebase, PWA, SweetAlert</p>
-                </div>
-              </div>
-            </a>
-            <!-- 簡易書籍管理システム -->
-            <a
-              class="projects__project animated fadeInLeft"
-              style="animation-delay: 0.5s;"
-              href="https://github.com/aocattleya/MiniBookSearch"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div class="projects__project__inner">
-                <h4 class="projects__project__inner__title">MiniBookSearch</h4>
-                <p>簡易書籍管理システム</p>
-                <img
-                  class="projects__project__inner__img"
-                  src="~assets/images/MiniBookSearch.png"
-                  alt="ramen-timer"
-                />
-                <div class="projects__project__inner__description">
-                  <p>
-                    GitHub<a class="star">★</a>15↑ Qiitaトレンド入り 登壇1回
-                  </p>
-                  <p>【言語】Python（Flask）+ Vue.js</p>
-                  <p>【使用】Elasticsearch, axios, WebAPI</p>
-                </div>
-              </div>
-            </a>
-            <!-- WordCloud-Japanese -->
-            <a
-              class="projects__project animated fadeInLeft"
-              style="animation-delay: 0.6s;"
-              href="https://github.com/aocattleya/WordCloud-Japanese"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div class="projects__project__inner">
-                <h4 class="projects__project__inner__title">
-                  WordCloud-Japanese
-                </h4>
-                <p>Mecabなしで実現するWordCloud</p>
-                <img
-                  class="projects__project__inner__img"
-                  src="~assets/images/WordCloud.png"
-                  alt="ramen-timer"
-                />
-                <div class="projects__project__inner__description">
-                  <p>登壇2回</p>
-                  <p>【言語】Python</p>
-                  <p>【使用】WordCloud</p>
-                </div>
-              </div>
-            </a>
-            <!-- OriginalCharacters -->
-            <a
-              class="projects__project animated fadeInLeft"
-              style="animation-delay: 0.7s;"
-              href="https://github.com/aocattleya/illustration-OriginalCharacters"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div class="projects__project__inner">
-                <h4 class="projects__project__inner__title">
-                  OriginalCharacters
-                </h4>
-                <p>描いたオリジナルキャラクターまとめ</p>
-                <img
-                  class="projects__project__inner__img"
-                  src="~assets/images/illustration.jpg"
-                  alt="ramen-timer"
-                />
-                <div class="projects__project__inner__description">
-                  <p></p>
-                  <p>【使用】FireAlpaca</p>
-                  <p>【詳細】「aocattleya」と「くりんちゃん」がいます。</p>
-                </div>
-              </div>
-            </a>
-            <!-- LeisurePass -->
-            <a
-              class="projects__project animated fadeInLeft"
-              style="animation-delay: 0.8s;"
-              href="https://github.com/aocattleya/LeisurePass"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div class="projects__project__inner">
-                <h4 class="projects__project__inner__title">LeisurePass！</h4>
-                <p>チケット販売のECサイト</p>
-                <img
-                  class="projects__project__inner__img"
-                  src="~assets/images/LeisurePass.png"
-                  alt="ramen-timer"
-                />
-                <div class="projects__project__inner__description">
-                  <p></p>
-                  <p>【言語】Java（Apache Struts2）</p>
-                </div>
-              </div>
-            </a>
-            <!-- NightSky-Background -->
-            <a
-              class="projects__project animated fadeInLeft"
-              style="animation-delay: 0.9s;"
-              href="https://github.com/aocattleya/NightSky-Background"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div class="projects__project__inner">
-                <h4 class="projects__project__inner__title">
-                  NightSky-Background
-                </h4>
-                <p>星の流れる動く背景</p>
-                <img
-                  class="projects__project__inner__img"
-                  src="~assets/images/NightSky.gif"
-                  alt="ramen-timer"
-                />
-                <div class="projects__project__inner__description">
-                  <p>登壇1回</p>
-                  <p>【言語】CSS</p>
-                  <p>【使用】FireAlpaca</p>
-                </div>
-              </div>
-            </a>
-            <!-- グループチャットアプリ -->
-            <a
-              class="projects__project animated fadeInLeft"
-              style="animation-delay: 1s;"
-              href="https://github.com/aocattleya/GroupChat-App"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div class="projects__project__inner">
-                <h4 class="projects__project__inner__title">
-                  GroupChat App
-                </h4>
-                <P>グループチャットアプリ</P>
-                <img
-                  class="projects__project__inner__img"
-                  src="~assets/images/GroupChat.gif"
-                  alt="ramen-timer"
-                />
-                <div class="projects__project__inner__description">
-                  <p></p>
-                  <p>【言語】Ruby（Ruby on Rails）</p>
-                  <p>Haml, SCSS(BEM) + jQuery(Ajax)</p>
-                  <p>【使用】AWS, Nginx</p>
-                </div>
-              </div>
-            </a>
-            <!-- メルカリ -->
-            <a
-              class="projects__project animated fadeInLeft"
-              style="animation-delay: 1.1s;"
-              href="https://github.com/aocattleya/Mercari_clone"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div class="projects__project__inner">
-                <h4 class="projects__project__inner__title">
-                  Mercari clone
-                </h4>
-                <P>メルカリのクローンサイト</P>
-                <img
-                  class="projects__project__inner__img"
-                  src="~assets/images/mercari.png"
-                  alt="ramen-timer"
-                />
-                <div class="projects__project__inner__description">
-                  <p>登壇1回</p>
-                  <p>【言語】Ruby（Ruby on Rails）</p>
-                  <p>Haml, SCSS(BEM) + jQuery</p>
-                  <p>【使用】AWS, Nginx, OmniAuth, PAY.JP</p>
-                </div>
-              </div>
-            </a>
-            <!-- Vue-FormValidation -->
-            <a
-              class="projects__project animated fadeInLeft"
-              style="animation-delay: 1.2s;"
-              href="https://github.com/aocattleya/Vue-FormValidation"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div class="projects__project__inner">
-                <h4 class="projects__project__inner__title">
-                  Vue FormValidation
-                </h4>
-                <p>Vue CLIでフォームバリデーション</p>
-                <img
-                  class="projects__project__inner__img"
-                  src="~assets/images/FormValidation.gif"
-                  alt="ramen-timer"
-                />
-                <div class="projects__project__inner__description">
-                  <p></p>
-                  <p>【言語】JavaScript（Vue.js）</p>
-                  <p>【使用】SweetAlert</p>
-                </div>
-              </div>
-            </a>
-            <!-- ディスクトップアプリ -->
-            <a
-              class="projects__project animated fadeInLeft"
-              style="animation-delay: 1.3s;"
-              href="https://github.com/aocattleya/Visual_CSharpApps"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div class="projects__project__inner">
-                <h4 class="projects__project__inner__title">
-                  VisualC# Apps
-                </h4>
-                <p>８個のデスクトップアプリ</p>
-                <img
-                  class="projects__project__inner__img"
-                  src="~assets/images/CSharp.jpg"
-                  alt="ramen-timer"
-                />
-                <div class="projects__project__inner__description">
-                  <p></p>
-                  <p>【言語】C#</p>
-                  <p>【使用】VisualStudio2017<br />WindowsForms, CoreTweet</p>
-                </div>
-              </div>
-            </a>
-            <!-- Portfolio -->
-            <a
-              class="projects__project animated fadeInLeft"
-              style="animation-delay: 1.4s;"
-              href="https://github.com/aocattleya/Portfolio"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div class="projects__project__inner">
-                <h4 class="projects__project__inner__title">
-                  Portfolio
-                </h4>
-                <p>Nuxt.jsでポートフォリオ</p>
-                <img
-                  class="projects__project__inner__img"
-                  src="~assets/images/aocattleyaSite.gif"
-                  alt="ramen-timer"
-                />
-                <div class="projects__project__inner__description">
-                  <p>登壇1回</p>
-                  <p>【言語】JavaScript（Nuxt.js）</p>
-                  <p>【使用】Animate.css, Firebase</p>
-                </div>
-              </div>
-            </a>
-            <!-- Totoro-Layer -->
-            <a
-              class="projects__project animated fadeInLeft"
-              style="animation-delay: 1.5s;"
-              href="https://github.com/aocattleya/Totoro-Layer"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div class="projects__project__inner">
-                <h4 class="projects__project__inner__title">
-                  Totoro-Layer
-                </h4>
-                <p>トトロのアニメーション</p>
-                <img
-                  class="projects__project__inner__img"
-                  src="~assets/images/totoro.png"
-                  alt="ramen-timer"
-                />
-                <div class="projects__project__inner__description">
-                  <p></p>
-                  <p>【使用】FireAlpaca</p>
-                  <p>
-                    【詳細】社内忘年会のビンゴゲーム待機画面用に描かせて頂いた動くトトロ。
-                  </p>
-                </div>
-              </div>
-            </a>
-            <!-- 他 -->
-            <a
-              class="projects__project animated fadeInLeft"
-              style="animation-delay: 1.6s;"
-              href="https://github.com/aocattleya?tab=repositories"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div class="projects__project__inner">
-                <h4 class="projects__project__inner__title">
-                  他にも見る
-                </h4>
-                <img
-                  class="projects__project__inner__img"
-                  src="~assets/images/kurin-github.png"
-                  alt="ramen-timer"
-                />
-                <div class="projects__project__inner__description">
-                  <p>現在、40個以上のリポジトリがあります。</p>
-                  <p>
-                    全てのリポジトリにデモ画像などを充実させているので是非楽しんでください。
-                  </p>
-                </div>
-              </div>
-            </a>
+            <Project
+              v-for="(project, key, name) in projects"
+              :key="name"
+              :url="project.url"
+              :name="project.name"
+              :description="project.description"
+              :img="project.img"
+              :alt="project.alt"
+              :performance="project.performance"
+              :language="project.language"
+              :use="project.use"
+              :delay="project.delay"
+            />
           </div>
           <div class="title-achievement">
             <div class="title-achievement__text">
@@ -992,13 +677,165 @@
 </style>
 
 <script>
+import Project from '@/components/Project.vue'
 export default {
+  components: {
+    Project
+  },
   data() {
     return {
       imageSrc: require('~/assets/images/aocattleya.jpg'),
       signboardMsg: '作った物&実績',
       description:
         '趣味でフロントエンドを主軸にWeb技術を学んでいます。+ 絵描き🎨',
+      projects: [
+        {
+          url: 'https://github.com/aocattleya/Ramen-Timer',
+          name: 'ラーメンタイマー',
+          description: 'カップラーメンのタイマーアプリ',
+          img: require('@/assets/images/timer.gif'),
+          alt: 'ramen-timer',
+          performance: 'GitHub★45↑ Qiitaトレンド入り 登壇1回',
+          language: '【言語】JavaScript（Vue.js）',
+          use: '【使用】Firebase, PWA, SweetAlert',
+          delay: 'animation-delay: 0.4s;'
+        },
+        {
+          url: 'https://github.com/aocattleya/MiniBookSearch',
+          name: 'MiniBookSearch',
+          description: '簡易書籍管理システム',
+          img: require('@/assets/images/MiniBookSearch.png'),
+          alt: 'MiniBookSearch',
+          performance: 'GitHub★15↑ Qiitaトレンド入り 登壇1回',
+          language: '【言語】Python（Flask）+ Vue.js',
+          use: '【使用】Elasticsearch, axios, WebAPI',
+          delay: 'animation-delay: 0.5s;'
+        },
+        {
+          url: 'https://github.com/aocattleya/WordCloud-Japanese',
+          name: 'WordCloud-Japanese',
+          description: 'Mecabなしで実現するWordCloud',
+          img: require('@/assets/images/WordCloud.png'),
+          alt: 'WordCloud',
+          performance: '登壇2回',
+          language: '【言語】Python',
+          use: '【使用】WordCloud',
+          delay: 'animation-delay: 0.6s;'
+        },
+        {
+          url: 'https://github.com/aocattleya/illustration-OriginalCharacters',
+          name: 'OriginalCharacters',
+          description: '描いたオリジナルキャラクターまとめ',
+          img: require('@/assets/images/illustration.jpg'),
+          alt: 'OriginalCharacters',
+          performance: '',
+          language: '【使用】FireAlpaca',
+          use: '【詳細】「aocattleya」と「くりんちゃん」がいます。',
+          delay: 'animation-delay: 0.7s;'
+        },
+        {
+          url: 'https://github.com/aocattleya/LeisurePass',
+          name: 'LeisurePass！',
+          description: 'チケット販売のECサイト',
+          img: require('@/assets/images/LeisurePass.png'),
+          alt: 'LeisurePass！',
+          performance: '',
+          language: '【言語】Java（Apache Struts2）',
+          use: '【使用】Eclipse',
+          delay: 'animation-delay: 0.8s;'
+        },
+        {
+          url: 'https://github.com/aocattleya/NightSky-Background',
+          name: 'NightSky-Background',
+          description: '星の流れる動く背景',
+          img: require('@/assets/images/NightSky.gif'),
+          alt: 'NightSky-Background',
+          performance: '登壇1回',
+          language: '【言語】CSS',
+          use: '【使用】FireAlpaca',
+          delay: 'animation-delay: 0.9s;'
+        },
+        {
+          url: 'https://github.com/aocattleya/GroupChat-App',
+          name: 'GroupChat App',
+          description: 'グループチャットアプリ',
+          img: require('@/assets/images/GroupChat.gif'),
+          alt: 'GroupChatApp',
+          performance: '',
+          language:
+            '【言語】Ruby（Ruby on Rails） + Haml, SCSS(BEM) + jQuery(Ajax)',
+          use: '【使用】AWS, Nginx',
+          delay: 'animation-delay: 1s;'
+        },
+        {
+          url: 'https://github.com/aocattleya/Mercari_clone',
+          name: 'Mercari clone',
+          description: 'メルカリのクローンサイト',
+          img: require('@/assets/images/mercari.png'),
+          alt: 'Mercari',
+          performance: '登壇1回',
+          language: '【言語】Ruby（Ruby on Rails）+ Haml, SCSS(BEM) + jQuery',
+          use: '【使用】AWS, Nginx, OmniAuth, PAY.JP',
+          delay: 'animation-delay: 1.1s;'
+        },
+        {
+          url: 'https://github.com/aocattleya/Vue-FormValidation',
+          name: 'Vue FormValidation',
+          description: 'Vue CLIでフォームバリデーション',
+          img: require('@/assets/images/FormValidation.gif'),
+          alt: 'VueFormValidation',
+          performance: '',
+          language: '【言語】JavaScript（Vue.js）',
+          use: '【使用】SweetAlert',
+          delay: 'animation-delay: 1.2s;'
+        },
+        {
+          url: 'https://github.com/aocattleya/Visual_CSharpApps',
+          name: 'VisualC# Apps',
+          description: '８個のデスクトップアプリ',
+          img: require('@/assets/images/CSharp.jpg'),
+          alt: 'VisualC#Apps',
+          performance: '',
+          language: '【言語】C#',
+          use: '【使用】VisualStudio2017, WinForms, CoreTweet',
+          delay: 'animation-delay: 1.3s;'
+        },
+        {
+          url: 'https://github.com/aocattleya/Portfolio',
+          name: 'Portfolio',
+          description: 'Nuxt.jsでポートフォリオ',
+          img: require('@/assets/images/aocattleyaSite.gif'),
+          alt: 'Portfolio',
+          performance: '登壇1回',
+          language: '【言語】JavaScript（Nuxt.js）',
+          use: '【使用】Animate.css, Firebase',
+          delay: 'animation-delay: 1.4s;'
+        },
+        {
+          url: 'https://github.com/aocattleya/Totoro-Layer',
+          name: 'Totoro-Layer',
+          description: 'トトロのアニメーション',
+          img: require('@/assets/images/totoro.png'),
+          alt: 'ramen-timer',
+          performance: '',
+          language: '【使用】FireAlpaca',
+          use:
+            '【詳細】社内忘年会のビンゴゲーム待機画面用に描かせて頂いた動くトトロ。',
+          delay: 'animation-delay: 1.5s;'
+        },
+        {
+          url: 'https://github.com/aocattleya?tab=repositories',
+          name: '他にも見る',
+          description: '',
+          img: require('@/assets/images/kurin-github.png'),
+          alt: 'other',
+          performance: '現在、40個以上のリポジトリがあります。',
+          language: '',
+          use:
+            '全てのリポジトリにデモ画像などを充実させているので是非楽しんでください。',
+          delay: 'animation-delay: 1.6s;'
+        }
+      ],
       isActive: false,
       rubberBand: false,
       jello: true,
