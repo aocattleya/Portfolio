@@ -1,41 +1,28 @@
 <template>
   <div :class="{ hinge: bom }" class="container animated">
     <div v-if="isActive === false" class="profiles">
-      <div
-        :class="{ hinge: bom1, signboard: signboard }"
-        v-on:click="toggleSwitch()"
-      >
-        <div :class="{ hinge: bom2, sign: sign }">{{ signboardMsg }}</div>
-        <div :class="{ hinge: bom2, strings: strings }"></div>
-        <div :class="{ hinge: bom2, pin: pin, top: top }"></div>
-        <div :class="{ hinge: bom2, pin: pin, left: left }"></div>
-        <div :class="{ hinge: bom2, pin: pin, right: right }"></div>
-      </div>
+      <SignBoard v-on:click.native="toggleSwitch()" v-if="bomCount <= 10" />
       <div class="profiles__profile animated fadeIn">
         <img
           v-on:click=";(rubberBand = !rubberBand), (jello = !jello), collapse()"
-          :class="{
-            rubberBand: rubberBand,
-            jello: jello,
-            bounceOutUp: bom1
-          }"
+          :class="{ rubberBand: rubberBand, jello: jello, bounceOutUp: bom5 }"
           :src="imageSrc"
           class="profiles__profile__logo animated"
         />
         <img
-          :class="{ hinge: bom3 }"
+          :class="{ hinge: bom1 }"
           src="~/assets/images/name.png"
           class="profiles__profile__name animated"
         />
         <h2
-          :class="{ hinge: bom4 }"
+          :class="{ hinge: bom2 }"
           class="profiles__profile__subtitle animated"
         >
           {{ description }}
         </h2>
-        <div :class="{ hinge: bom5 }" class="profiles__profile__links animated">
+        <div :class="{ hinge: bom3 }" class="profiles__profile__links animated">
           <a
-            :class="{ hinge: bom6 }"
+            :class="{ hinge: bom4 }"
             class="profiles__profile__links__output_logo animated flipInX"
             href="https://connpass.com/user/aocattleya/"
             target="_blank"
@@ -43,28 +30,28 @@
           >
           </a>
           <a
-            :class="{ hinge: bom7 }"
+            :class="{ hinge: bom5 }"
             class="profiles__profile__links__output_logo animated flipInX"
             href="https://qiita.com/aocattleya"
             target="_blank"
             rel="noopener noreferrer"
           ></a>
           <a
-            :class="{ hinge: bom8 }"
+            :class="{ hinge: bom6 }"
             class="profiles__profile__links__output_logo animated flipInX"
             href="https://github.com/aocattleya"
             target="_blank"
             rel="noopener noreferrer"
           ></a>
           <a
-            :class="{ hinge: bom9 }"
+            :class="{ hinge: bom7 }"
             class="profiles__profile__links__output_logo animated flipInX"
             href="https://twitter.com/aocattleya"
             target="_blank"
             rel="noopener noreferrer"
           ></a>
           <a
-            :class="{ hinge: bom10 }"
+            :class="{ hinge: bom8 }"
             class="profiles__profile__links__output_logo animated flipInX"
             href="https://lapras.com/public/QIOCQBE"
             target="_blank"
@@ -260,7 +247,6 @@
 </template>
 
 <style lang="scss">
-@import '~assets/style/_signboard.scss';
 @import '~assets/style/_mixins.scss';
 
 .container {
@@ -678,9 +664,11 @@
 
 <script>
 import Project from '@/components/Project.vue'
+import SignBoard from '@/components/SignBoard.vue'
 export default {
   components: {
-    Project
+    Project,
+    SignBoard
   },
   data() {
     return {
@@ -839,15 +827,7 @@ export default {
       isActive: false,
       rubberBand: false,
       jello: true,
-      pulse: false,
       bomCount: null,
-      signboard: true,
-      sign: true,
-      strings: true,
-      pin: true,
-      top: true,
-      left: true,
-      right: true,
       bom: false,
       bom1: false,
       bom2: false,
@@ -876,15 +856,6 @@ export default {
       this.bomCount += 1
       if (this.bomCount === 10) {
         this.imageSrc = require('~/assets/images/aocattleyaSorrow.jpg')
-        this.signboardMsg = ''
-        this.jello = false
-        this.signboard = false
-        this.sign = false
-        this.strings = false
-        this.pin = false
-        this.top = false
-        this.left = false
-        this.right = false
         setTimeout(
           function() {
             this.bom = true
@@ -895,59 +866,47 @@ export default {
           function() {
             this.bom1 = true
           }.bind(this),
-          2200
+          300
         )
         setTimeout(
           function() {
             this.bom2 = true
           }.bind(this),
-          1400
+          2000
         )
         setTimeout(
           function() {
             this.bom3 = true
           }.bind(this),
-          300
+          5500
         )
         setTimeout(
           function() {
             this.bom4 = true
           }.bind(this),
-          2000
+          1800
         )
         setTimeout(
           function() {
             this.bom5 = true
           }.bind(this),
-          5500
+          2300
         )
         setTimeout(
           function() {
             this.bom6 = true
           }.bind(this),
-          1800
+          2800
         )
         setTimeout(
           function() {
             this.bom7 = true
           }.bind(this),
-          2300
-        )
-        setTimeout(
-          function() {
-            this.bom8 = true
-          }.bind(this),
-          2800
-        )
-        setTimeout(
-          function() {
-            this.bom9 = true
-          }.bind(this),
           1500
         )
         setTimeout(
           function() {
-            this.bom10 = true
+            this.bom8 = true
           }.bind(this),
           2500
         )

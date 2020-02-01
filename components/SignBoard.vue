@@ -1,3 +1,14 @@
+<template>
+  <div class="signboard">
+    <div class="sign">作った物&実績</div>
+    <div class="strings"></div>
+    <div class="pin top"></div>
+    <div class="pin left"></div>
+    <div class="pin right"></div>
+  </div>
+</template>
+
+<style scoped>
 .signboard {
   position: absolute;
   top: 32px;
@@ -77,3 +88,4 @@
     transform: rotate(-10deg) translateX(22px);
   }
 }
+</style>
