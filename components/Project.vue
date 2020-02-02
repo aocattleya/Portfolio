@@ -44,7 +44,7 @@ export default {
     },
     img: {
       type: String,
-      default: '@/assets/images/kurin-github.png'
+      default: require('@/assets/images/kurin-github.png')
     },
     alt: {
       type: String,
