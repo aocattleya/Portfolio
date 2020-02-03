@@ -36,7 +36,7 @@
   justify-content: center;
   &__project {
     color: #35495e;
-    box-shadow: 2px 2px 2px #555;
+    box-shadow: 0 0px 3px #555;
     font-size: 40px;
     margin: 30px 15px 30px;
     width: 320px;
@@ -79,7 +79,8 @@
     }
     &:hover {
       box-shadow: none;
-      transition: 0.5s;
+      transition: 0.3s;
+      background-color: #eee;
     }
     &:nth-child(1):before {
       @include language_icon;
