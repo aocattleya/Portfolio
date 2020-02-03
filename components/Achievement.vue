@@ -367,7 +367,7 @@ export default {
           performance: 'GitHub★45↑ Qiitaトレンド入り 登壇1回',
           language: '【言語】JavaScript（Vue.js）',
           use: '【使用】Firebase, PWA, SweetAlert',
-          delay: 'animation-delay: 0.4s;'
+          delay: 'animation-delay: 0.3s;'
         },
         {
           url: 'https://github.com/aocattleya/MiniBookSearch',
@@ -378,7 +378,7 @@ export default {
           performance: 'GitHub★15↑ Qiitaトレンド入り 登壇1回',
           language: '【言語】Python（Flask）+ Vue.js',
           use: '【使用】Elasticsearch, axios, WebAPI',
-          delay: 'animation-delay: 0.5s;'
+          delay: 'animation-delay: 0.4s;'
         },
         {
           url: 'https://github.com/aocattleya/WordCloud-Japanese',
@@ -389,7 +389,7 @@ export default {
           performance: '登壇2回',
           language: '【言語】Python',
           use: '【使用】WordCloud',
-          delay: 'animation-delay: 0.6s;'
+          delay: 'animation-delay: 0.5s;'
         },
         {
           url: 'https://github.com/aocattleya/illustration-OriginalCharacters',
@@ -400,6 +400,17 @@ export default {
           performance: '',
           language: '【使用】FireAlpaca',
           use: '【詳細】「aocattleya」と「くりんちゃん」がいます。',
+          delay: 'animation-delay: 0.6s;'
+        },
+        {
+          url: 'https://github.com/aocattleya/Portfolio',
+          name: 'Portfolio',
+          description: 'Nuxt.jsでポートフォリオ',
+          img: require('@/assets/images/aocattleyaSite.gif'),
+          alt: 'Portfolio',
+          performance: '登壇1回',
+          language: '【言語】JavaScript（Nuxt.js）',
+          use: '【使用】Animate.css, Firebase',
           delay: 'animation-delay: 0.7s;'
         },
         {
@@ -470,17 +481,6 @@ export default {
           delay: 'animation-delay: 1.3s;'
         },
         {
-          url: 'https://github.com/aocattleya/Portfolio',
-          name: 'Portfolio',
-          description: 'Nuxt.jsでポートフォリオ',
-          img: require('@/assets/images/aocattleyaSite.gif'),
-          alt: 'Portfolio',
-          performance: '登壇1回',
-          language: '【言語】JavaScript（Nuxt.js）',
-          use: '【使用】Animate.css, Firebase',
-          delay: 'animation-delay: 1.4s;'
-        },
-        {
           url: 'https://github.com/aocattleya/Totoro-Layer',
           name: 'Totoro-Layer',
           description: 'トトロのアニメーション',
@@ -490,7 +490,7 @@ export default {
           language: '【使用】FireAlpaca',
           use:
             '【詳細】社内忘年会のビンゴゲーム待機画面用に描かせて頂いた動くトトロ。',
-          delay: 'animation-delay: 1.5s;'
+          delay: 'animation-delay: 1.4s;'
         },
         {
           url: 'https://github.com/aocattleya?tab=repositories',
@@ -502,7 +502,7 @@ export default {
           language: '',
           use:
             '全てのリポジトリにデモ画像などを充実させているので是非楽しんでください。',
-          delay: 'animation-delay: 1.6s;'
+          delay: 'animation-delay: 1.5s;'
         }
       ],
       isActive: false

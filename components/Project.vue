@@ -105,15 +105,15 @@
     }
     &:nth-child(5):before {
       @include language_icon;
-      background-image: url('~@/assets/images/java.png');
+      background-image: url('~@/assets/images/nuxt.png');
     }
     &:nth-child(6):before {
       @include language_icon;
-      background-image: url('~@/assets/images/css.png');
+      background-image: url('~@/assets/images/java.png');
     }
     &:nth-child(7):before {
       @include language_icon;
-      background-image: url('~@/assets/images/ruby.png');
+      background-image: url('~@/assets/images/css.png');
     }
     &:nth-child(8):before {
       @include language_icon;
@@ -122,15 +122,15 @@
     }
     &:nth-child(9):before {
       @include language_icon;
-      background-image: url('~@/assets/images/vue.png');
+      background-image: url('~@/assets/images/ruby.png');
     }
     &:nth-child(10):before {
       @include language_icon;
-      background-image: url('~@/assets/images/cs.png');
+      background-image: url('~@/assets/images/vue.png');
     }
     &:nth-child(11):before {
       @include language_icon;
-      background-image: url('~@/assets/images/nuxt.png');
+      background-image: url('~@/assets/images/cs.png');
     }
     &:nth-child(12):before {
       @include language_icon;
