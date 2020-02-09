@@ -436,6 +436,17 @@ export default {
           delay: 'animation-delay: 0.9s;'
         },
         {
+          url: 'https://github.com/aocattleya/KizunaAI-Lang',
+          name: 'キズナアイ言語',
+          description: 'r-fxxkを使用したBrainfuck系言語',
+          img: require('@/assets/images/kizunaai.jpeg'),
+          alt: 'キズナアイ言語',
+          performance: '',
+          language: '【言語】キズナアイ言語, Ruby',
+          use: '【使用】r-fxxk',
+          delay: 'animation-delay: 1.0s;'
+        },
+        {
           url: 'https://github.com/aocattleya/GroupChat-App',
           name: 'GroupChat App',
           description: 'グループチャットアプリ',
@@ -445,7 +456,7 @@ export default {
           language:
             '【言語】Ruby（Ruby on Rails） + Haml, SCSS(BEM) + jQuery(Ajax)',
           use: '【使用】AWS, Nginx',
-          delay: 'animation-delay: 1s;'
+          delay: 'animation-delay: 1.1s;'
         },
         {
           url: 'https://github.com/aocattleya/Mercari_clone',
@@ -456,7 +467,7 @@ export default {
           performance: '登壇1回',
           language: '【言語】Ruby（Ruby on Rails）+ Haml, SCSS(BEM) + jQuery',
           use: '【使用】AWS, Nginx, OmniAuth, PAY.JP',
-          delay: 'animation-delay: 1.1s;'
+          delay: 'animation-delay: 1.2s;'
         },
         {
           url: 'https://github.com/aocattleya/Vue-FormValidation',
@@ -467,7 +478,7 @@ export default {
           performance: '',
           language: '【言語】JavaScript（Vue.js）',
           use: '【使用】SweetAlert',
-          delay: 'animation-delay: 1.2s;'
+          delay: 'animation-delay: 1.3s;'
         },
         {
           url: 'https://github.com/aocattleya/Visual_CSharpApps',
@@ -478,7 +489,7 @@ export default {
           performance: '',
           language: '【言語】C#',
           use: '【使用】VisualStudio2017, WinForms, CoreTweet',
-          delay: 'animation-delay: 1.3s;'
+          delay: 'animation-delay: 1.4s;'
         },
         {
           url: 'https://github.com/aocattleya/Totoro-Layer',
@@ -490,7 +501,7 @@ export default {
           language: '【使用】FireAlpaca',
           use:
             '【詳細】社内忘年会のビンゴゲーム待機画面用に描かせて頂いた動くトトロ。',
-          delay: 'animation-delay: 1.4s;'
+          delay: 'animation-delay: 1.5s;'
         },
         {
           url: 'https://github.com/aocattleya?tab=repositories',
@@ -502,7 +513,7 @@ export default {
           language: '',
           use:
             '全てのリポジトリにデモ画像などを充実させているので是非楽しんでください。',
-          delay: 'animation-delay: 1.5s;'
+          delay: 'animation-delay: 1.6s;'
         }
       ],
       isActive: false
