@@ -7,7 +7,7 @@ export default {
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
-      { name: "viewport", content: "width=1200" },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
       { name: 'description', content: 'aocattleyaのリンクやアプリをまとめたポートフォリオサイトです。' },
       { name: 'keywords', content: 'aocattleya ポートフォリオ'}
     ],
@@ -23,6 +23,7 @@ export default {
    */
   css: [
     '@/assets/style/global.scss',
+    '@/assets/style/_responsive.scss',
   ],
   /*
    ** Plugins to load before mounting the App
