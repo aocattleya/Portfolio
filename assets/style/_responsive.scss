@@ -1,0 +1,154 @@
+@media screen and (max-width: 500px) {
+  .projects-content {
+    width: 100% !important;
+    height: 100% !important;
+    left: calc(50% - 50%) !important;
+    top: calc(50% - 50%) !important;
+  }
+
+  .switch {
+    display: block !important;
+  }
+
+  .profiles__profile__logo {
+    width: 150px !important;
+    margin-top: 25px !important;
+  }
+
+  .profiles__profile__links {
+    width: 95% !important;
+    margin-bottom: 20px !important;
+  }
+
+  .profiles__profile__links__output_logo {
+    width: 75px !important;
+    height: 75px !important;
+    &:nth-child(1) {
+      display: none !important;
+    }
+    &:nth-last-child(1) {
+      margin-top: 0px !important;
+    }
+  }
+
+  .profiles__profile__name {
+    width: 80% !important;
+    margin-bottom: 0px !important;
+  }
+
+  .profiles__profile__subtitle {
+    font-size: 16px !important;
+    width: 90% !important;
+  }
+
+  .signboard {
+    display: none;
+  }
+
+  .title-create {
+    width: 300px !important;
+    &::after {
+      width: 300px !important;
+    }
+    &::before {
+      width: 300px !important;
+    }
+  }
+
+  .title-create__icon {
+    width: 100px !important;
+    height: 100px !important;
+    top: -9px !important;
+    right: -30px !important;
+  }
+
+  .projects__project {
+    width: 90% !important;
+    margin: 10px 0 10px 15px !important;
+  }
+
+  .title-achievement {
+    margin: 60px auto 30px !important;
+    width: 300px !important;
+    &::after {
+      width: 300px !important;
+    }
+    &::before {
+      width: 300px !important;
+    }
+  }
+
+  .title-achievement__icon {
+    width: 100px !important;
+    height: 100px !important;
+    top: -8px !important;
+    left: -30px !important;
+  }
+
+  .achievement {
+    padding: 15px 5px 0px !important;
+    width: 95% !important;
+    p {
+      font-size: 10px !important;
+    }
+  }
+
+  .achievement__right--company {
+    display: none !important;
+  }
+
+  .title-other {
+    margin: 60px auto 30px !important;
+    width: 300px !important;
+    &::after {
+      width: 300px !important;
+    }
+    &::before {
+      width: 300px !important;
+    }
+  }
+
+  .other {
+    width: 95% !important;
+    p {
+      font-size: 5px !important;
+    }
+  }
+
+  .title-other__icon {
+    width: 100px !important;
+    height: 100px !important;
+    top: -9px !important;
+    right: -30px !important;
+  }
+
+  .other__tweet {
+    margin: 0 auto !important;
+    width: 95% !important;
+  }
+
+  .other {
+    &__tweet--1 {
+      width: 95% !important;
+    }
+    &__tweet--2 {
+      width: 95% !important;
+      margin: 0 auto;
+    }
+    &__tweet--3 {
+      width: 95% !important;
+      margin: 0 auto;
+    }
+  }
+
+  .speakerdeck {
+    max-width: 85% !important;
+    margin: 30px auto !important;
+  }
+
+  .back {
+    margin: 50px auto 20px !important;
+    line-height: 25px !important;
+    width: 75% !important;
+  }
+}

@@ -52,6 +52,7 @@
         rel="noopener noreferrer"
       ></a>
     </div>
+    <div v-on:click="toggleSwitch()" class="switch">作ったもの&実績</div>
   </div>
 </template>
 
@@ -157,6 +158,21 @@
     }
   }
 }
+
+.switch {
+  display: none;
+  font-size: 2rem;
+  font-weight: 700;
+  width: 90%;
+  height: 70px;
+  line-height: 70px;
+  margin-bottom: 20px;
+  border-radius: 1rem;
+  background-color: burlywood;
+  color: saddlebrown;
+  text-shadow: 0 2px 0 rgba(255, 255, 255, 0.3), 0 -2px 0 rgba(0, 0, 0, 0.7);
+  font-family: font;
+}
 </style>
 
 <script>
@@ -182,6 +198,9 @@ export default {
     }
   },
   methods: {
+    toggleSwitch() {
+      this.$parent.isActive = true
+    },
     collapse() {
       this.bomCount += 1
       if (this.bomCount === 10) {

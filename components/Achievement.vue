@@ -76,10 +76,10 @@
           <p>：兵庫県 神戸市</p>
           <p>：東京都 墨田区</p>
           <p>
-            ：MacBook Pro / MacBook Air / Win10, デュアル, Corei7-7700
+            ：MacBook Pro Air / Win10, デュアル, Corei7-7700
           </p>
           <p>
-            ：趣味でもやれて好きで取り組める事を仕事にした事、天職です。
+            ：好きで取り組める事を仕事にした事、天職です。
           </p>
           <p>
             ：ぐらばく（<a
@@ -339,12 +339,6 @@
     color: #fff;
     cursor: pointer;
     text-decoration: none;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .achievement {
-    padding: 40px 30px 25px 30px;
   }
 }
 </style>
