@@ -5,11 +5,13 @@
       :class="{ rubberBand: rubberBand, jello: jello, bounceOutUp: bom5 }"
       :src="imageSrc"
       class="profiles__profile__logo animated"
+      alt="aocattleya"
     />
     <img
       :class="{ hinge: bom1 }"
       src="~/assets/images/name.png"
       class="profiles__profile__name animated"
+      alt=""
     />
     <h2 :class="{ hinge: bom2 }" class="profiles__profile__subtitle animated">
       {{ description }}
@@ -17,40 +19,48 @@
     <div :class="{ hinge: bom3 }" class="profiles__profile__links animated">
       <a
         :class="{ hinge: bom4 }"
-        class="profiles__profile__links__output_logo animated flipInX"
-        href="https://connpass.com/user/aocattleya/"
+        class="profiles__profile__links__output--connpass animated flipInX"
+        href="https://connpass.com/user/aocattleya"
         target="_blank"
         rel="noopener noreferrer"
+        alt="connpass"
       >
       </a>
       <a
         :class="{ hinge: bom5 }"
-        class="profiles__profile__links__output_logo animated flipInX"
+        class="profiles__profile__links__output--qiita animated flipInX"
         href="https://qiita.com/aocattleya"
         target="_blank"
         rel="noopener noreferrer"
-      ></a>
+        alt="qiita"
+      >
+      </a>
       <a
         :class="{ hinge: bom6 }"
-        class="profiles__profile__links__output_logo animated flipInX"
+        class="profiles__profile__links__output--github animated flipInX"
         href="https://github.com/aocattleya"
         target="_blank"
         rel="noopener noreferrer"
-      ></a>
+        alt="github"
+      >
+      </a>
       <a
         :class="{ hinge: bom7 }"
-        class="profiles__profile__links__output_logo animated flipInX"
+        class="profiles__profile__links__output--twitter animated flipInX"
         href="https://twitter.com/aocattleya"
         target="_blank"
         rel="noopener noreferrer"
-      ></a>
+        alt="twitter"
+      >
+      </a>
       <a
         :class="{ hinge: bom8 }"
-        class="profiles__profile__links__output_logo animated flipInX"
+        class="profiles__profile__links__output--lapras animated flipInX"
         href="https://lapras.com/public/QIOCQBE"
-        target="_blank"
         rel="noopener noreferrer"
-      ></a>
+        alt="twitter"
+      >
+      </a>
     </div>
     <div v-on:click="toggleSwitch()" class="switch">作ったもの&実績</div>
   </div>
@@ -109,7 +119,7 @@
       border-top: 1px solid rgb(141, 141, 141);
       padding-top: 20px;
       margin-bottom: 20px;
-      &__output_logo {
+      &__output {
         width: 100px;
         height: 100px;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -117,8 +127,9 @@
         display: block;
         background-size: cover;
         background-position: center;
+        border-style: none;
       }
-      &__output_logo:nth-child(1) {
+      &__output--connpass {
         background: url('~assets/images/connpass.png');
         width: 110px;
         height: 110px;
@@ -126,28 +137,28 @@
         animation-delay: 0.4s;
         @include output_logo;
       }
-      &__output_logo:nth-child(2) {
+      &__output--qiita {
         background: url('~assets/images/qiita.png');
         width: 120px;
         height: 120px;
         animation-delay: 0.5s;
         @include output_logo;
       }
-      &__output_logo:nth-child(3) {
+      &__output--github {
         background: url('~assets/images/github.jpg');
         width: 120px;
         height: 120px;
         animation-delay: 0.6s;
         @include output_logo;
       }
-      &__output_logo:nth-child(4) {
+      &__output--twitter {
         background: url('~assets/images/twitter.png');
         width: 120px;
         height: 120px;
         animation-delay: 0.7s;
         @include output_logo;
       }
-      &__output_logo:nth-child(5) {
+      &__output--lapras {
         background: url('~assets/images/lapras.jpg');
         width: 110px;
         height: 110px;
