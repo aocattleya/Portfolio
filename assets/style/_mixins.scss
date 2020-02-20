@@ -3,6 +3,10 @@
   box-shadow: rgba(79, 194, 220, 0.2) 0px 0px 20px;
   background-size: cover;
   background-position: center;
+  border-color: aliceblue;
+  &:hover{
+    border-style: ridge;
+  }
 }
 
 @mixin title {

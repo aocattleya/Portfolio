@@ -39,6 +39,8 @@
   color: saddlebrown;
   text-shadow: 0 2px 0 rgba(255, 255, 255, 0.3), 0 -2px 0 rgba(0, 0, 0, 0.7);
   font-family: font;
+  border-style: groove;
+  border-color: burlywood;
 }
 
 .strings {
