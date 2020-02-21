@@ -57,6 +57,7 @@
         :class="{ hinge: bom8 }"
         class="profiles__profile__links__output--lapras animated flipInX"
         href="https://lapras.com/public/QIOCQBE"
+        target="_blank"
         rel="noopener noreferrer"
         alt="twitter"
       >
