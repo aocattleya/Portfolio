@@ -360,8 +360,7 @@ export default {
           alt: 'ramen-timer',
           performance: 'GitHub★45↑ Qiitaトレンド入り 登壇1回',
           language: '【言語】JavaScript（Vue.js）',
-          use: '【使用】Firebase, PWA, SweetAlert',
-          delay: 'animation-delay: 0.3s;'
+          use: '【使用】Firebase, PWA, SweetAlert'
         },
         {
           url: 'https://github.com/aocattleya/MiniBookSearch',
@@ -369,10 +368,9 @@ export default {
           description: '簡易書籍管理システム',
           img: require('@/assets/images/MiniBookSearch.png'),
           alt: 'MiniBookSearch',
-          performance: 'GitHub★15↑ Qiitaトレンド入り 登壇1回',
+          performance: 'GitHub★20↑ Qiitaトレンド入り 登壇1回',
           language: '【言語】Python（Flask）+ Vue.js',
-          use: '【使用】Elasticsearch, axios, WebAPI',
-          delay: 'animation-delay: 0.4s;'
+          use: '【使用】Elasticsearch, axios, WebAPI'
         },
         {
           url: 'https://github.com/aocattleya/WordCloud-Japanese',
@@ -382,8 +380,7 @@ export default {
           alt: 'WordCloud',
           performance: '登壇2回',
           language: '【言語】Python',
-          use: '【使用】WordCloud',
-          delay: 'animation-delay: 0.5s;'
+          use: '【使用】WordCloud'
         },
         {
           url: 'https://github.com/aocattleya/illustration-OriginalCharacters',
@@ -393,8 +390,7 @@ export default {
           alt: 'OriginalCharacters',
           performance: '',
           language: '【使用】FireAlpaca',
-          use: '【詳細】「aocattleya」と「くりんちゃん」がいます。',
-          delay: 'animation-delay: 0.6s;'
+          use: '【詳細】「aocattleya」と「くりんちゃん」がいます。'
         },
         {
           url: 'https://github.com/aocattleya/Portfolio',
@@ -404,8 +400,7 @@ export default {
           alt: 'Portfolio',
           performance: '登壇1回',
           language: '【言語】JavaScript（Nuxt.js）',
-          use: '【使用】Animate.css, Firebase',
-          delay: 'animation-delay: 0.7s;'
+          use: '【使用】Animate.css, Firebase'
         },
         {
           url: 'https://github.com/aocattleya/Qiita-ContributionGraph',
@@ -415,8 +410,7 @@ export default {
           alt: 'Qiita Contribution Graph',
           performance: '',
           language: '【言語】Lua',
-          use: '',
-          delay: 'animation-delay: 0.8s;'
+          use: ''
         },
         {
           url: 'https://github.com/aocattleya/LeisurePass',
@@ -426,8 +420,7 @@ export default {
           alt: 'LeisurePass！',
           performance: '',
           language: '【言語】Java（Apache Struts2）',
-          use: '【使用】Eclipse',
-          delay: 'animation-delay: 0.9s;'
+          use: '【使用】Eclipse'
         },
         {
           url: 'https://github.com/aocattleya/NightSky-Background',
@@ -437,8 +430,7 @@ export default {
           alt: 'NightSky-Background',
           performance: '登壇1回',
           language: '【言語】CSS',
-          use: '【使用】FireAlpaca',
-          delay: 'animation-delay: 1.0s;'
+          use: '【使用】FireAlpaca'
         },
         {
           url: 'https://github.com/aocattleya/KizunaAI-Lang',
@@ -448,8 +440,7 @@ export default {
           alt: 'キズナアイ言語',
           performance: '',
           language: '【言語】キズナアイ言語, Ruby',
-          use: '【使用】r-fxxk',
-          delay: 'animation-delay: 1.1s;'
+          use: '【使用】r-fxxk'
         },
         {
           url: 'https://github.com/aocattleya/GroupChat-App',
@@ -460,8 +451,7 @@ export default {
           performance: '',
           language:
             '【言語】Ruby（Ruby on Rails） + Haml, SCSS(BEM) + jQuery(Ajax)',
-          use: '【使用】AWS, Nginx',
-          delay: 'animation-delay: 1.2s;'
+          use: '【使用】AWS, Nginx'
         },
         {
           url: 'https://github.com/aocattleya/Mercari_clone',
@@ -471,8 +461,7 @@ export default {
           alt: 'Mercari',
           performance: '登壇1回',
           language: '【言語】Ruby（Ruby on Rails）+ Haml, SCSS(BEM) + jQuery',
-          use: '【使用】AWS, Nginx, OmniAuth, PAY.JP',
-          delay: 'animation-delay: 1.3s;'
+          use: '【使用】AWS, Nginx, OmniAuth, PAY.JP'
         },
         {
           url: 'https://github.com/aocattleya/Vue-FormValidation',
@@ -482,8 +471,7 @@ export default {
           alt: 'VueFormValidation',
           performance: '',
           language: '【言語】JavaScript（Vue.js）',
-          use: '【使用】SweetAlert',
-          delay: 'animation-delay: 1.4s;'
+          use: '【使用】SweetAlert'
         },
         {
           url: 'https://github.com/aocattleya/Visual_CSharpApps',
@@ -493,8 +481,7 @@ export default {
           alt: 'VisualC#Apps',
           performance: '',
           language: '【言語】C#',
-          use: '【使用】VisualStudio2017, WinForms, CoreTweet',
-          delay: 'animation-delay: 1.5s;'
+          use: '【使用】VisualStudio2017, WinForms, CoreTweet'
         },
         {
           url: 'https://github.com/aocattleya/Totoro-Layer',
@@ -505,8 +492,7 @@ export default {
           performance: '',
           language: '【使用】FireAlpaca',
           use:
-            '【詳細】社内忘年会のビンゴゲーム待機画面用に描かせて頂いた動くトトロ。',
-          delay: 'animation-delay: 1.6s;'
+            '【詳細】社内忘年会のビンゴゲーム待機画面用に描かせて頂いた動くトトロ。'
         },
         {
           url: 'https://github.com/aocattleya?tab=repositories',
@@ -517,8 +503,7 @@ export default {
           performance: '現在、40個以上のリポジトリがあります。',
           language: '',
           use:
-            '全てのリポジトリにデモ画像などを充実させているので是非楽しんでください。',
-          delay: 'animation-delay: 1.6s;'
+            '全てのリポジトリにデモ画像などを充実させているので是非楽しんでください。'
         }
       ],
       isActive: false
