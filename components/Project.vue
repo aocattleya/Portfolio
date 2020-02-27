@@ -2,7 +2,7 @@
   <a
     v-bind:href="url"
     v-bind:style="delay"
-    class="projects__project animated fadeInLeft"
+    class="projects__project"
     target="_blank"
     rel="noopener noreferrer"
   >
@@ -188,10 +188,6 @@ export default {
     use: {
       type: String,
       default: '使用'
-    },
-    delay: {
-      type: String,
-      default: 'animation-delay: 0s;'
     }
   }
 }
