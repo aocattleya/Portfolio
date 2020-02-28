@@ -20,13 +20,25 @@
     margin-bottom: 20px !important;
   }
 
-  .profiles__profile__links__output_logo {
-    width: 75px !important;
-    height: 75px !important;
-    &:nth-child(1) {
+  .profiles__profile__links__output {
+    &--connpass {
       display: none !important;
     }
-    &:nth-last-child(1) {
+    &--qiita {
+      width: 75px !important;
+      height: 75px !important;
+    }
+    &--github {
+      width: 75px !important;
+      height: 75px !important;
+    }
+    &--twitter {
+      width: 75px !important;
+      height: 75px !important;
+    }
+    &--lapras {
+      width: 75px !important;
+      height: 75px !important;
       margin-top: 0px !important;
     }
   }
