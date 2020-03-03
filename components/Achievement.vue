@@ -18,7 +18,6 @@
         :performance="project.performance"
         :language="project.language"
         :use="project.use"
-        :delay="project.delay"
       />
     </div>
     <div class="title-achievement">
