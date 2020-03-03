@@ -1,7 +1,6 @@
 <template>
   <a
     v-bind:href="url"
-    v-bind:style="delay"
     class="projects__project"
     target="_blank"
     rel="noopener noreferrer"
