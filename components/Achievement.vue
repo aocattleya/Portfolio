@@ -44,9 +44,9 @@
         </p>
         <p>：4回（100名以上2回、70名以上1回、30名以上1回）</p>
         <p>
-          ：Contributions2000↑ Star90↑ Followers150↑
+          ：Contributions2000↑ Star100↑ Followers190↑
         </p>
-        <p>：Contributions1700↑ トレンド入り5回</p>
+        <p>：Contributions1800↑ トレンド入り5回</p>
         <p>：アメーバブログで月36万PVの個人ブログの運営経験あり</p>
       </div>
     </div>
@@ -66,6 +66,7 @@
           <p>住み</p>
           <p>開発環境</p>
           <p>強み</p>
+          <p>好きな言葉</p>
           <p>尊敬する人</p>
         </div>
         <div class="other__text__right">
@@ -79,6 +80,9 @@
           </p>
           <p>
             ：好きで取り組める事を仕事にした事、天職です。
+          </p>
+          <p>
+            ：能力ではなく行動で人はヒーローになる。
           </p>
           <p>
             ：ぐらばく（<a
@@ -357,7 +361,7 @@ export default {
           description: 'カップラーメンのタイマーアプリ',
           img: require('@/assets/images/timer.gif'),
           alt: 'ramen-timer',
-          performance: 'GitHub★45↑ Qiitaトレンド入り 登壇1回',
+          performance: 'GitHub★50↑ Qiitaトレンド入り 登壇1回',
           language: '【言語】JavaScript（Vue.js）',
           use: '【使用】Firebase, PWA, SweetAlert'
         },
