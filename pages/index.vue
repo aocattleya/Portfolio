@@ -1,12 +1,12 @@
 <template>
   <div>
     <div :class="{ hinge: bom }" class="container animated">
-      <div v-if="isActive === false" class="profiles">
+      <div v-show="isActive === false" class="profiles">
         <SignBoard v-on:click.native="toggleSwitch()" v-if="bomCount <= 9" />
         <Profile @bom-event="bomLargeFrame" />
       </div>
       <transition appear>
-        <div v-if="isActive === true" class="projects-content">
+        <div v-show="isActive === true" class="projects-content">
           <Achievement @profile-open="profileOpen" />
         </div>
       </transition>
