@@ -66,23 +66,6 @@ export default {
     }
   },
   methods: {
-    window: (onload = () => {
-      const preloads = [
-        'vue.png',
-        '旧aocattleya.jpg',
-        'flask.png',
-        'python.png',
-        'flask.png',
-        'firealpaca.png',
-        'nuxt.png',
-        'lua.png'
-      ]
-      for (let i = 0; i < preloads.length; i++) {
-        let preload = 'preloads' + [i]
-        preload = new Image()
-        preload.src = require('~/assets/images/' + preloads[i])
-      }
-    }),
     toggleSwitch() {
       this.isActive = true
     },
