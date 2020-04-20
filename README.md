@@ -1,4 +1,4 @@
-<img alt="aocattleya" src="https://user-images.githubusercontent.com/39142850/72116719-7afd1380-338e-11ea-9285-263f60f21116.png">
+<img alt="aocattleya" src="https://user-images.githubusercontent.com/39142850/79777682-8f2fb400-8372-11ea-8a52-c550157c6e19.gif">
 
 # aocattleya
 
