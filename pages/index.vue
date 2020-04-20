@@ -78,7 +78,7 @@ export default {
     },
     bomLargeFrame(bomCount) {
       this.bomCount = bomCount
-      if (bomCount === 10) {
+      if (bomCount === 5) {
         setTimeout(
           function() {
             this.bom = true
