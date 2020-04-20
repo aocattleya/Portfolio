@@ -35,17 +35,9 @@
         <p>ブログ</p>
       </div>
       <div class="achievement__right">
-        <p>
-          ：優秀新人社員賞（平成31年3月29日）<a
-            class="achievement__right--company"
-          >
-            Leading Edge Co.,Ltd.</a
-          >
-        </p>
+        <p>：優秀新人社員賞（平成31年3月29日）</p>
         <p>：4回（100名以上2回、70名以上1回、30名以上1回）</p>
-        <p>
-          ：Contributions2000↑ Star100↑ Followers190↑
-        </p>
+        <p>：Contributions2000↑ Star170↑ Followers200↑</p>
         <p>：Contributions1800↑ トレンド入り5回</p>
         <p>：アメーバブログで月36万PVの個人ブログの運営経験あり</p>
       </div>
@@ -172,7 +164,7 @@
     <div v-on:click="toggleSwitch(), hingeReturn()" class="back">
       <div class="back__text">
         <b>TOP</b>
-        <span>（TOPのキャラクターロゴを10回押すと・・・？）</span>
+        <span>（TOPのキャラクターロゴを5回押すと・・・？）</span>
       </div>
     </div>
   </div>

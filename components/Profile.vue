@@ -215,7 +215,7 @@ export default {
     },
     collapse() {
       this.bomCount += 1
-      if (this.bomCount === 10) {
+      if (this.bomCount === 5) {
         this.imageSrc = require('~/assets/images/aocattleyaSorrow.jpg')
         setTimeout(
           function() {
