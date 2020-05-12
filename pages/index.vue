@@ -2,7 +2,7 @@
   <div>
     <div :class="{ hinge: bom }" class="container animated">
       <div v-show="isActive === false" class="profiles">
-        <SignBoard v-on:click.native="toggleSwitch()" v-if="bomCount <= 9" />
+        <SignBoard v-on:click.native="toggleSwitch()" v-if="bomCount < 5" />
         <Profile @bom-event="bomLargeFrame" />
       </div>
       <transition appear>
