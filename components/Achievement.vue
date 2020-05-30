@@ -418,6 +418,16 @@ export default {
           use: '【使用】Eclipse'
         },
         {
+          url: 'https://github.com/aocattleya/KizunaAI-Lang',
+          name: 'キズナアイ言語',
+          description: 'r-fxxkを使用したBrainfuck系言語',
+          img: require('@/assets/images/kizunaai.jpeg'),
+          alt: 'キズナアイ言語',
+          performance: '',
+          language: '【言語】キズナアイ言語, Ruby',
+          use: '【使用】r-fxxk'
+        },
+        {
           url: 'https://github.com/aocattleya/NightSky-Background',
           name: 'NightSky-Background',
           description: '星の流れる動く背景',
@@ -428,14 +438,14 @@ export default {
           use: '【使用】FireAlpaca'
         },
         {
-          url: 'https://github.com/aocattleya/KizunaAI-Lang',
-          name: 'キズナアイ言語',
-          description: 'r-fxxkを使用したBrainfuck系言語',
-          img: require('@/assets/images/kizunaai.jpeg'),
-          alt: 'キズナアイ言語',
+          url: 'https://github.com/aocattleya/DLsite-Animation',
+          name: 'DLsite-Animation',
+          description: '崩壊するDLsite入り口風サイト',
+          img: require('@/assets/images/DLsite-Animation.png'),
+          alt: 'DLsite-Animation',
           performance: '',
-          language: '【言語】キズナアイ言語, Ruby',
-          use: '【使用】r-fxxk'
+          language: '【言語】JavaScript（Vue.js）, CSS',
+          use: '【使用】Animate.css'
         },
         {
           url: 'https://github.com/aocattleya/GroupChat-App',
