@@ -36,9 +36,9 @@
       </div>
       <div class="achievement__right">
         <p>：優秀新人社員賞（平成31年3月29日）</p>
-        <p>：4回（100名以上2回、70名以上1回、30名以上1回）</p>
-        <p>：Contributions2000↑ Star170↑ Followers200↑</p>
-        <p>：Contributions1800↑ トレンド入り5回</p>
+        <p>：5回（100名以上2回、70名以上1回、20,30名以上2回）</p>
+        <p>：Contributions2400↑ Star170↑ Followers260↑</p>
+        <p>：Contributions2300↑ トレンド入り6回</p>
         <p>：アメーバブログで月36万PVの個人ブログの運営経験あり</p>
       </div>
     </div>
@@ -58,7 +58,6 @@
           <p>住み</p>
           <p>開発環境</p>
           <p>強み</p>
-          <p>好きな言葉</p>
           <p>尊敬する人</p>
         </div>
         <div class="other__text__right">
@@ -72,9 +71,6 @@
           </p>
           <p>
             ：好きで取り組める事を仕事にした事、天職です。
-          </p>
-          <p>
-            ：能力ではなく行動で人はヒーローになる。
           </p>
           <p>
             ：ぐらばく（<a
@@ -457,16 +453,6 @@ export default {
           language:
             '【言語】Ruby（Ruby on Rails） + Haml, SCSS(BEM) + jQuery(Ajax)',
           use: '【使用】AWS, Nginx'
-        },
-        {
-          url: 'https://github.com/aocattleya/Mercari_clone',
-          name: 'Mercari clone',
-          description: 'メルカリのクローンサイト',
-          img: require('@/assets/images/mercari.png'),
-          alt: 'Mercari',
-          performance: '登壇1回',
-          language: '【言語】Ruby（Ruby on Rails）+ Haml, SCSS(BEM) + jQuery',
-          use: '【使用】AWS, Nginx, OmniAuth, PAY.JP'
         },
         {
           url: 'https://github.com/aocattleya/Vue-FormValidation',
