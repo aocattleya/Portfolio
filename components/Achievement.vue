@@ -36,9 +36,9 @@
       </div>
       <div class="achievement__right">
         <p>：優秀新人社員賞（平成31年3月29日）</p>
-        <p>：5回（100名以上2回、70名以上1回、20,30名以上2回）</p>
-        <p>：Contributions2400↑ Star170↑ Followers260↑</p>
-        <p>：Contributions2300↑ トレンド入り6回</p>
+        <p>：5回（100名以上2回、70名以上1回、20,30名以上3回）</p>
+        <p>：Contributions3000↑ Star200↑ Followers300↑</p>
+        <p>：Contributions2500↑ トレンド入り6回</p>
         <p>：アメーバブログで月36万PVの個人ブログの運営経験あり</p>
       </div>
     </div>
@@ -54,8 +54,8 @@
           <p>生年月日</p>
           <p>血液型</p>
           <p>趣味</p>
-          <p>出身</p>
           <p>住み</p>
+          <p>出身</p>
           <p>開発環境</p>
           <p>強み</p>
           <p>尊敬する人</p>
@@ -64,8 +64,8 @@
           <p>：1993年12月7日</p>
           <p>：A型</p>
           <p>：映画、プログラミング</p>
+          <p>：東京都 荒川区</p>
           <p>：兵庫県 神戸市</p>
-          <p>：東京都 墨田区</p>
           <p>
             ：MacBook Pro Air / Win10, デュアル, Corei7-7700
           </p>
@@ -349,7 +349,7 @@ export default {
           description: 'カップラーメンのタイマーアプリ',
           img: require('@/assets/images/timer.gif'),
           alt: 'ramen-timer',
-          performance: 'GitHub★50↑ Qiitaトレンド入り 登壇1回',
+          performance: 'GitHub★60↑ Qiitaトレンド入り 登壇2回',
           language: '【言語】JavaScript（Vue.js）',
           use: '【使用】Firebase, PWA, SweetAlert'
         },
@@ -432,6 +432,16 @@ export default {
           performance: '登壇1回',
           language: '【言語】CSS',
           use: '【使用】FireAlpaca'
+        },
+        {
+          url: 'https://github.com/aocattleya/Collapse-Site',
+          name: '崩壊するサイト',
+          description: 'Qiitaサンプル用に作成した崩壊サイト',
+          img: require('@/assets/images/collapse_site.gif'),
+          alt: '崩壊するサイト',
+          performance: 'Qiitaトレンド入り',
+          language: '【言語】JavaScript（jQuery）, CSS',
+          use: '【使用】Animate.css'
         },
         {
           url: 'https://github.com/aocattleya/DLsite-Animation',

@@ -125,26 +125,30 @@
     }
     &:nth-child(10):before {
       @include language_icon;
-      background-image: url('~@/assets/images/css.png');
-      border-radius: 50%;
+      background-image: url('~@/assets/images/javascript.png');
     }
     &:nth-child(11):before {
       @include language_icon;
-      background-image: url('~@/assets/images/ruby.png');
+      background-image: url('~@/assets/images/css.png');
+      border-radius: 50%;
     }
     &:nth-child(12):before {
       @include language_icon;
-      background-image: url('~@/assets/images/vue.png');
+      background-image: url('~@/assets/images/ruby.png');
     }
     &:nth-child(13):before {
       @include language_icon;
-      background-image: url('~@/assets/images/cs.png');
+      background-image: url('~@/assets/images/vue.png');
     }
     &:nth-child(14):before {
       @include language_icon;
-      background-image: url('~@/assets/images/firealpaca.png');
+      background-image: url('~@/assets/images/cs.png');
     }
     &:nth-child(15):before {
+      @include language_icon;
+      background-image: url('~@/assets/images/firealpaca.png');
+    }
+    &:nth-child(16):before {
       @include language_icon;
       background-image: url('~@/assets/images/github.jpg');
       border-radius: 50%;

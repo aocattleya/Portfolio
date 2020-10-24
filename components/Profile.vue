@@ -192,7 +192,7 @@ export default {
   data() {
     return {
       description:
-        '趣味でフロントエンドを主軸にWeb技術を学んでいます。+ 絵描き🎨',
+        'フロントエンド、PHPを主軸にWeb開発技術を学んでいます。+ 絵描き',
       imageSrc: require('@/assets/images/aocattleya.png'),
       rubberBand: false,
       jello: true,
