@@ -108,47 +108,51 @@
     }
     &:nth-child(6):before {
       @include language_icon;
-      background-image: url('~@/assets/images/lua.png');
+      background-image: url('~@/assets/images/python.png');
     }
     &:nth-child(7):before {
       @include language_icon;
-      background-image: url('~@/assets/images/java.png');
+      background-image: url('~@/assets/images/lua.png');
     }
     &:nth-child(8):before {
+      @include language_icon;
+      background-image: url('~@/assets/images/java.png');
+    }
+    &:nth-child(9):before {
       @include language_icon;
       background-image: url('~@/assets/images/bf.png');
       border-radius: 50%;
     }
-    &:nth-child(9):before {
+    &:nth-child(10):before {
       @include language_icon;
       background-image: url('~@/assets/images/css.png');
     }
-    &:nth-child(10):before {
+    &:nth-child(11):before {
       @include language_icon;
       background-image: url('~@/assets/images/javascript.png');
     }
-    &:nth-child(11):before {
+    &:nth-child(12):before {
       @include language_icon;
       background-image: url('~@/assets/images/css.png');
       border-radius: 50%;
     }
-    &:nth-child(12):before {
+    &:nth-child(13):before {
       @include language_icon;
       background-image: url('~@/assets/images/ruby.png');
     }
-    &:nth-child(13):before {
+    &:nth-child(14):before {
       @include language_icon;
       background-image: url('~@/assets/images/vue.png');
     }
-    &:nth-child(14):before {
+    &:nth-child(15):before {
       @include language_icon;
       background-image: url('~@/assets/images/cs.png');
     }
-    &:nth-child(15):before {
+    &:nth-child(16):before {
       @include language_icon;
       background-image: url('~@/assets/images/firealpaca.png');
     }
-    &:nth-child(16):before {
+    &:nth-child(17):before {
       @include language_icon;
       background-image: url('~@/assets/images/github.jpg');
       border-radius: 50%;

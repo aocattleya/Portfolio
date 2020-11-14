@@ -394,6 +394,17 @@ export default {
           use: '【使用】Animate.css, Firebase'
         },
         {
+          url:
+            'https://github.com/aocattleya/DLsite-LinkBreakMonitoring-TweetBot',
+          name: '自動監視ツイートBot',
+          description: 'リンク切れや天気予報をリプライ通知',
+          img: require('@/assets/images/benri-bot.png'),
+          alt: 'DLsite aocattleya',
+          performance: '',
+          language: '【言語】Python',
+          use: '【使用】BS4, TwitterAPI, Heroku'
+        },
+        {
           url: 'https://github.com/aocattleya/Qiita-ContributionGraph',
           name: 'Qiita Contribution Graph',
           description: 'Qiitaいいね数の上位5つをグラフで出力',
